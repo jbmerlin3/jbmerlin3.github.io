@@ -1,0 +1,69 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - files/
+    - images/
+    - robots.txt
+
+website:
+  title: "Jonathan Merlin"
+  description: "Baseball operations and analytics portfolio: pitching models, trade evaluation, scouting and writing."
+  site-url: "https://jbmerlin3.github.io"
+  favicon: images/favicon.svg
+  image: /images/social-card.png
+  open-graph: true
+  twitter-card:
+    card-style: summary_large_image
+  page-navigation: true
+  back-to-top-navigation: false
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: About
+      - href: app.qmd
+        text: Arsenal App
+      - text: Projects
+        menu:
+          - href: projects/index.qmd
+            text: All projects
+          - text: "---"
+          - href: projects/detmers-trade-evaluation/index.qmd
+            text: Reid Detmers Trade Evaluation
+          - href: projects/sweep-velocity-tradeoff/index.qmd
+            text: Sweep Velocity Tradeoff
+      - href: scouting/index.qmd
+        text: Scouting Reports
+      - href: blog/index.qmd
+        text: Blog
+    right:
+      - icon: file-earmark-person
+        href: files/Jonathan-Merlin-Resume.pdf
+        aria-label: Resume
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jonathanmerlin/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/jbmerlin3
+        aria-label: GitHub
+      - icon: envelope
+        href: mailto:jbmerlin3@gmail.com
+        aria-label: Email
+  page-footer:
+    left: "© 2026 Jonathan Merlin"
+    right:
+      - text: "jbmerlin3@gmail.com"
+        href: mailto:jbmerlin3@gmail.com
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme.scss, theme-dark.scss]
+    respect-user-color-scheme: true
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    fig-cap-location: bottom
+    tbl-cap-location: top

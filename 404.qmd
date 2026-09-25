@@ -1,0 +1,6 @@
+---
+title: "Page not found"
+description: "Page not found."
+---
+
+That page doesn't exist, or it moved. Try the [home page](/), the [Projects](/projects/) page, or the search in the top right.

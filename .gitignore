@@ -1,0 +1,8 @@
+_site/
+.quarto/
+/.luarc.json
+.DS_Store
+*_files/libs/
+
+/.quarto/
+**/*.quarto_ipynb

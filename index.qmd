@@ -1,0 +1,77 @@
+---
+pagetitle: "Baseball Operations & Analytics"
+page-layout: full
+listing:
+  id: latest-posts
+  contents: "blog/*/index.qmd"
+  sort: "date desc"
+  type: table
+  max-items: 3
+  fields: [date, title, reading-time]
+  sort-ui: false
+  filter-ui: false
+  date-format: "MMM D, YYYY"
+description: "Baseball operations and analytics portfolio: a live Statcast arsenal app, trade evaluation, pitch design research, amateur scouting reports and writing."
+---
+
+::: {.hero}
+::: {.hero-text}
+```{=html}
+<p class="hero-name" role="heading" aria-level="1">Jonathan Merlin</p>
+```
+
+::: {.lede}
+I combine analytical fluency with in-person evaluation to see what the numbers can't
+:::
+
+::: {.hero-bio}
+I'm a scouting apprentice at Prep Baseball GA, where I take a data-driven approach to evaluating amateur players and write scouting reports on standout players for publication. Before that I was a baseball operations intern at The Team and at Major League Baseball, where my work included salary arbitration and player development. I graduated from Washington University in St. Louis (Olin Business School) in May 2026 with a BSBA in Finance and minors in Business Analytics and the Business of Sports.
+:::
+
+[Resume (PDF)](files/Jonathan-Merlin-Resume.pdf){.btn .btn-primary}
+[LinkedIn](https://www.linkedin.com/in/jonathanmerlin/){.btn .btn-outline-primary}
+[Email me](mailto:jbmerlin3@gmail.com){.btn .btn-outline-primary}
+:::
+
+::: {.hero-figure}
+{{< include _hero-chart.qmd >}}
+
+::: {.hero-caption}
+Payton Tolle's 2026 season, 2,095 pitches by movement. Built from the same data as the [Pitcher Arsenal app](app.qmd).
+:::
+:::
+:::
+
+## Work Samples
+
+```{=html}
+<ul class="work">
+  <li><a href="app.html">
+    <span class="work-kind">Live App</span>
+    <span class="work-title">Pitcher Arsenal</span>
+    <span class="work-what">Any pitcher's movement, usage, pitch characteristics and heat maps within major league context.</span>
+  </a></li>
+  <li><a href="projects/detmers-trade-evaluation/index.html">
+    <span class="work-kind">Trade Evaluation</span>
+    <span class="work-title">Acquiring Reid Detmers</span>
+    <span class="work-what">Which starter should Atlanta buy at the deadline, and what package does his surplus value justify?</span>
+  </a></li>
+  <li><a href="projects/sweep-velocity-tradeoff/index.html">
+    <span class="work-kind">Research</span>
+    <span class="work-title">Sweep Velocity Tradeoff</span>
+    <span class="work-what">Does a breaking ball thrown harder than its shape predicts get better results?</span>
+  </a></li>
+  <li><a href="scouting/index.html">
+    <span class="work-kind">Scouting</span>
+    <span class="work-title">Amateur Scouting Reports</span>
+    <span class="work-what">Prep Baseball Report evaluations of high school pitchers and position players.</span>
+  </a></li>
+</ul>
+```
+
+## Writing
+
+::: {#latest-posts}
+:::
+
+[All posts](blog/index.qmd)

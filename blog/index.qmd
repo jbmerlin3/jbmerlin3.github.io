@@ -1,0 +1,16 @@
+---
+title: "Blog"
+subtitle: "Player writeups, prospect notes and research"
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description, categories, reading-time]
+  date-format: "MMMM D, YYYY"
+  feed: true
+description: "Player writeups, prospect notes and research on pitching."
+image: /images/social-card.png
+---

@@ -1,0 +1,18 @@
+---
+title: "Scouting Reports"
+subtitle: "Amateur evaluations written as a scouting apprentice at Prep Baseball GA"
+listing:
+  contents: "*/index.qmd"
+  sort: "title"
+  type: grid
+  grid-columns: 2
+  image-height: 220px
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title, subtitle]
+description: "Amateur scouting reports written for Prep Baseball Report."
+image: /images/social-card.png
+---
+
+[Download the combined PDF](Jonathan-Merlin-PBR-Scouting-Reports.pdf){.btn .btn-outline-primary .btn-sm}

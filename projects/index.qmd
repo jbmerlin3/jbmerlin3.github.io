@@ -1,0 +1,15 @@
+---
+title: "Projects"
+subtitle: "Models, evaluations and research"
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description, categories]
+  date-format: "MMMM YYYY"
+description: "Baseball analytics projects: trade evaluation and pitch design research."
+image: /images/social-card.png
+---

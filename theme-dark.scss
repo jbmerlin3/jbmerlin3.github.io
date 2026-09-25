@@ -1,0 +1,10 @@
+/*-- scss:defaults --*/
+// Dark: the same five roles on deep navy, not a tinted near-black.
+$paper: #0F1A2B;
+$ink:   #E6EBF2;
+$slate: #9AA7B9;
+$rule:  #26354D;
+$link:  #8DB8EE;
+
+/*-- scss:rules --*/
+.app-frame .launch { background: rgba(15, 26, 43, 0.6); }

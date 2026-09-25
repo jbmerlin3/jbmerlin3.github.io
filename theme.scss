@@ -1,0 +1,206 @@
+/*-- scss:defaults --*/
+// Palette: five named colors. Pitch colors appear only inside charts.
+//   paper  #F6F7F9  cool white page
+//   ink    #13213A  navy text
+//   slate  #5A6577  secondary text
+//   rule   #D8DDE5  hairlines and borders
+//   link   #1F5AA6  the one accent: links and primary buttons
+// Values are !default so theme-dark.scss can override them.
+$paper: #F6F7F9 !default;
+$ink:   #13213A !default;
+$slate: #5A6577 !default;
+$rule:  #D8DDE5 !default;
+$link:  #1F5AA6 !default;
+
+// Two families, clearly distinct: a condensed grotesk for headings and UI, a
+// serif for reading. Reports and posts are long; the serif carries them.
+$font-family-sans-serif: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif !default;
+$font-family-serif: "Source Serif 4", Georgia, serif !default;
+$font-family-base: $font-family-serif !default;
+$headings-font-family: $font-family-sans-serif !default;
+$headings-font-weight: 700 !default;
+
+$primary: $link !default;
+$link-color: $link !default;
+$body-color: $ink !default;
+$body-bg: $paper !default;
+$navbar-bg: $paper !default;
+$navbar-fg: $ink !default;
+$navbar-hl: $link !default;
+$footer-bg: $paper !default;
+$border-color: $rule !default;
+$border-radius: 4px !default;
+$btn-border-radius: 4px !default;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap");
+
+// ---- Type scale (1.25 ratio) ------------------------------------------------
+html { font-size: 17px; }
+body { line-height: 1.6; }
+main p, main li { max-width: 68ch; }          // under 80 characters a line
+h1, h2, h3, .title { font-family: $font-family-sans-serif; letter-spacing: -0.01em; }
+h1.title, .quarto-title .title { font-size: 2.44rem; font-stretch: 80%; font-weight: 800; }
+h2 { font-size: 1.56rem; font-stretch: 90%; margin-top: 2.2rem; }
+h3 { font-size: 1.25rem; }
+.subtitle, .quarto-title .subtitle { font-family: $font-family-sans-serif; color: $slate; font-size: 1.1rem; }
+// Page descriptions feed search results, link previews and listings. Under the
+// title they only repeat the subtitle, so they are hidden there.
+#title-block-header .description { display: none; }
+
+// UI text (nav, buttons, tables, captions) in the sans.
+.navbar, .btn, table, figcaption, .figure-caption, .listing-date, .listing-categories,
+.quarto-listing, .doc-actions, .work, .hero-caption, .sidebar, #TOC, .nav-footer {
+  font-family: $font-family-sans-serif;
+}
+.navbar { border-bottom: 1px solid $rule; }
+.navbar-brand .navbar-title { font-weight: 800; font-stretch: 80%; font-size: 1.2rem; }
+
+// ---- Focus and motion: the quality floor ------------------------------------
+a:focus-visible, button:focus-visible, .btn:focus-visible {
+  outline: 2px solid $link; outline-offset: 2px; box-shadow: none;
+}
+
+// ---- Home: hero -------------------------------------------------------------
+// The one bold element is the chart. The text column beside it stays plain.
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 2.5rem;
+  align-items: center;
+  padding: 1.5rem 0 1rem;
+}
+.hero .hero-name {
+  font-family: $font-family-sans-serif;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  font-stretch: 70%;
+  font-weight: 800;
+  line-height: 0.95;
+  margin: 0 0 1rem;
+}
+.hero .lede { font-size: 1.15rem; color: $slate; margin-bottom: 1.25rem; }
+.hero .btn { margin: 0.2rem 0.4rem 0.2rem 0; }
+.hero-caption { font-size: 0.85rem; color: $slate; margin-top: 0.4rem; }
+.hero-chart { width: 100%; height: auto; display: block; }
+.hero-chart .grid line { stroke: $rule; stroke-width: 1; }
+.hero-chart .grid line.zero { stroke: $slate; }
+.hero-chart .tick, .hero-chart .axis { font-family: $font-family-sans-serif; fill: $slate; font-size: 12px; }
+.hero-chart .axis { font-size: 13px; }
+.hero-chart .pitches circle { fill-opacity: 0.45; stroke: $ink; stroke-opacity: 0.25; stroke-width: 0.4; }
+.hero-chart .means circle { stroke: $ink; stroke-width: 1.5; }
+.hero-chart .means text {
+  font-family: $font-family-sans-serif; font-weight: 700; font-size: 13px; fill: $ink;
+  paint-order: stroke; stroke: $paper; stroke-width: 4px; stroke-linejoin: round;
+}
+.hero-chart .means .pct { font-weight: 400; fill: $slate; }
+
+// One orchestrated moment: pitch types plot in, most used first.
+@media (prefers-reduced-motion: no-preference) {
+  .hero-chart .pitches { animation: plot-in 0.5s ease-out both; animation-delay: calc(var(--i) * 0.12s); }
+  .hero-chart .means { animation: plot-in 0.4s ease-out both; animation-delay: 0.8s; }
+  @keyframes plot-in { from { opacity: 0; } to { opacity: 1; } }
+}
+
+@media (max-width: 767.98px) {
+  .hero { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+// ---- Home: work index -------------------------------------------------------
+// A list, not a card grid: kind, title and what it answers line up in columns,
+// so the structure itself says what each piece is.
+.work { list-style: none; padding: 0; margin: 0.5rem 0 1.5rem; border-top: 1px solid $rule; }
+.work li { max-width: none; border-bottom: 1px solid $rule; }
+.work a {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 0.25rem 1.5rem;
+  padding: 0.9rem 0.25rem;
+  color: inherit;
+  text-decoration: none;
+}
+.work a:hover .work-title, .work a:focus-visible .work-title { color: $link; text-decoration: underline; }
+.work .work-kind { color: $slate; font-size: 0.9rem; padding-top: 0.2rem; }
+.work .work-title { font-weight: 700; font-size: 1.1rem; }
+.work .work-what { grid-column: 2; color: $slate; font-family: $font-family-serif; }
+@media (max-width: 575.98px) {
+  .work a { grid-template-columns: 1fr; }
+  .work .work-what { grid-column: 1; }
+}
+
+// ---- Reports and posts ------------------------------------------------------
+.doc-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 0.5rem 0 1.5rem; font-size: 0.9rem; }
+.verdict { border-left: 3px solid $link; padding: 0.2rem 0 0.2rem 1.1rem; margin: 1rem 0 1.5rem; }
+main table { font-variant-numeric: tabular-nums; font-size: 0.92rem; }
+main table th { font-weight: 600; }
+
+// ---- Arsenal app launcher ---------------------------------------------------
+.app-frame { position: relative; border: 1px solid $rule; border-radius: $border-radius; overflow: hidden; background: $paper; }
+.app-frame img { display: block; width: 100%; height: auto; }
+.app-frame iframe {
+  display: block; position: relative; z-index: 1;
+  width: 100%; height: 1000px; border: 0;
+  background: transparent; // lets the waking message show through until Shiny paints
+}
+.app-frame .waking { display: none; position: absolute; top: 120px; left: 0; right: 0; text-align: center; font-family: $font-family-sans-serif; }
+.app-frame .waking p { margin: 0.75rem auto 0; }
+.app-frame.loaded .waking { display: block; }
+.app-frame .launch {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem;
+  background: rgba(246, 247, 249, 0.6);
+  font-family: $font-family-sans-serif;
+}
+.app-frame .launch .btn { font-size: 1.05rem; padding: 0.6rem 1.3rem; }
+.app-frame .launch small { background: $paper; padding: 0.2rem 0.6rem; border-radius: 3px; }
+.app-frame.loaded .launch, .app-frame.loaded img { display: none; }
+
+// ---- Listings and scouting --------------------------------------------------
+.report-image img { border: 1px solid $rule; }
+.quarto-grid-item.card { border: 1px solid $rule; box-shadow: none; background: transparent; }
+.quarto-grid-item.card:hover { border-color: $slate; }
+.listing-title { font-family: $font-family-sans-serif; font-weight: 700; }
+
+@media (max-width: 575.98px) {
+  html { font-size: 16px; }
+  // Wide tables scroll sideways inside themselves instead of widening the page
+  main table { display: block; overflow-x: auto; }
+  .app-frame iframe { height: 800px; }
+}
+
+// ---- Spacing and accent discipline (2026-09-25) -----------------------------
+// Macro spacing: sections breathe. Micro spacing: looser body leading, tighter
+// heading tracking.
+body { line-height: 1.7; }
+main h2 { margin-top: 3.5rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
+.hero { padding: 3rem 0 2.5rem; gap: 3.5rem; }
+.hero .hero-name { letter-spacing: -0.025em; }
+h1.title, .quarto-title .title { letter-spacing: -0.02em; }
+.work a { padding: 1.15rem 0.25rem; }
+#title-block-header { margin-bottom: 2rem; }
+
+// The accent is reserved for the primary button and the active nav tab.
+// Body links are ink with an underline, so the accent always means "act here".
+main a:not(.btn) { color: $ink; text-decoration: underline; text-decoration-color: $slate; text-underline-offset: 3px; }
+main a:not(.btn):hover { text-decoration-color: $ink; }
+main .work a, main .quarto-listing a, main .quarto-grid-item a { text-decoration: none; }
+main .work a:hover .work-title, main .work a:focus-visible .work-title { color: $ink; text-decoration: underline; text-underline-offset: 3px; }
+.btn-outline-primary { color: $ink; border-color: $rule; }
+.btn-outline-primary:hover { color: $ink; background: transparent; border-color: $ink; }
+.quarto-grid-item.card, .quarto-grid-item.card:hover { text-decoration: none; }
+
+// ---- Review fixes (2026-09-25) ----------------------------------------------
+.hero { padding-top: 1.25rem; align-items: start; }
+.hero .hero-text { padding-top: 4.5rem; }            // lines the name up with the chart's upper half
+.hero-chart .tick { font-size: 14px; }
+.hero-chart .axis { font-size: 15px; }
+.hero-chart .means text { font-size: 15px; }
+.work { border-top: 0; }                              // the h2 already draws the rule above the list
+@media (max-width: 767.98px) { .hero .hero-text { padding-top: 0; } }
+
+// ---- Hero holds the bio (2026-09-25) ----------------------------------------
+// The bio sits in the text column beside the chart, so neither column leaves a
+// block of empty space next to the other.
+.hero { align-items: center; }
+.hero .hero-text { padding-top: 0; }
+.hero .lede { margin-bottom: 1rem; }
+.hero-bio p { font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.4rem; }
