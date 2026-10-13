@@ -194,7 +194,10 @@ body:has(.scout) .quarto-title .subtitle { font-size: 1rem; margin-top: 0.15rem;
 .scout-side .trait { padding: 0.35rem 0; border-top: 1px solid $rule; }
 .scout-side .trait-name { display: block; font-weight: 700; }
 .scout-side .trait-notes { display: block; }
-.scout-side table { margin-top: 0.2rem; }
+.scout-data p { display: grid; grid-template-columns: 1fr auto; border-top: 1px solid $rule; }
+.scout-data .dk, .scout-data .dv { padding: 0.32rem 0; border-bottom: 1px solid $rule; }
+.scout-data .dk { color: $slate; }
+.scout-data .dv { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
 .scout-side > p:not(:first-child) .scout-h { margin-top: 0.7rem; }
 .scout-form { flex: 0 0 auto; width: 118px; display: flex; flex-direction: column; align-items: center; gap: 0.15rem; }
 .scout-form img { width: 118px; height: auto; border: 1px solid $rule; border-radius: $border-radius; }

@@ -182,13 +182,13 @@ local function scout_report(args, kwargs, meta)
   end
   local data = list(sc.data)
   if #data > 0 then
+    -- Label/value rows, no table header and no source column
     add("[Data]{.scout-h}\n")
-    add("| Measure | Value | Source |")
-    add("|:--------|:------|:-------|")
+    add(":::: {.scout-data}")
     for _, d in ipairs(data) do
-      add("| " .. cell(s(d.measure)) .. " | " .. cell(s(d.value)) .. " | " .. cell(s(d.source)) .. " |")
+      add("[" .. s(d.measure) .. "]{.dk}[" .. s(d.value) .. "]{.dv}")
     end
-    add("")
+    add("::::\n")
   end
   local links = {}
   if pdf ~= "" then table.insert(links, "[Full PBR evaluation form (PDF)](" .. pdf .. ")") end
