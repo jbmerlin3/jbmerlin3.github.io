@@ -137,7 +137,9 @@ local function scout_report(args, kwargs, meta)
   local tools = list(sc.tools)
   if #tools > 0 then
     add("| " .. (is_pitcher and "Pitch" or "Tool") .. " | Grade | Notes [20-80 grades, present/future]{.scout-sub} |")
-    add("|:" .. string.rep("-", 28) .. "|:" .. string.rep("-", 7) .. "|:" .. string.rep("-", 64) .. "|")
+    -- Pitchers need room for velo/spin/shape under the name; hitters give it to the notes
+    local first_w = is_pitcher and 28 or 15
+    add("|:" .. string.rep("-", first_w) .. "|:" .. string.rep("-", 7) .. "|:" .. string.rep("-", 92 - first_w) .. "|")
     for _, t in ipairs(tools) do
       local name = s(t.name)
       -- A row with no grade and no notes is an unfilled sheet row: skip it, but say so
