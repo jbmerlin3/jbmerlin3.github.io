@@ -52,6 +52,9 @@ scout:
     - measure: "Swing speed"
       value: "80 mph"
       source: "PBR form"
+    - measure: "Max exit velo"
+      value: "103 mph"
+      source: ""
   traits:
     - name: "Body and projection"
       tags: ["Short and stout", "Tightly wound", "Strong lower", "Wide shoulders"]
