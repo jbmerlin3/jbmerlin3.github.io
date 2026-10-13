@@ -10,35 +10,35 @@ scout:
   role: "hitter"
   bt: "R/R"
   size: "5-8 / 192"
-  commit: ""
+  commit: "Rutgers"
   team: ""
-  ofp: ""
-  follow: ""
-  summary: "A physical catcher whose plus arm and power on both sides of the ball stand out."
+  ofp: "40"
+  follow: "Follow"
+  summary: "A physical catcher whose plus arm and offensive power stand out."
   pbr_url: ""
   looks:
-    - "PBR evaluation form (Prep Baseball GA)"
+    - "PBR evaluation form (Prep Baseball GA), Future Games (Class of 2028), Jul 22, 2026"
   tools:
     - name: "Hit"
       grade: "30/50"
-      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Avg balance", "Explosive bat speed", "Good approach", "In/out path", "Line drive", "Gap-to-gap", "Fluid"]
-      notes: "Starts from a crouched setup with a smooth load and short stride, keyed by a leg kick and an explosive lower half. The in/out path produces line drives gap to gap, and the bat-to-ball skill projects to handle upper-level velocity. The 50 future rests on that contact skill, with the path the main thing to clean up."
+      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Avg balance", "Explosive bat speed", "Good approach", "In/out path"]
+      notes: "Starting couched, Mitchell employs a leg kick load but with quiet hand movements helping him find consistent barrels. Strong swing decisions with minimal chase as head stays quiet and stable throughout the swing"
     - name: "Power"
-      grade: "40/60"
-      tags: []
-      notes: "Immense lower-half strength and plus bat speed (80 mph swing speed) let him drive the ball with authority to all fields. The in/out path limits his pull-side air power and can lead to popups the other way. A path that works on plane unlocks the 60 future."
+      grade: "30/60"
+      tags: ["Explosive lower half", "Present above average bat speed"]
+      notes: "More gap-gap power presently due to in/out swing path and lack of a pull/air approach. Will post strong EVs to all fields. Above average projection relies on fixing the path to be more geared for pull side launch"
     - name: "Run"
-      grade: ""
-      tags: []
-      notes: ""
+      grade: "20/40"
+      tags: ["Clunky catcher profile"]
+      notes: "Slow runner but with IQ to run the bases correctly. Won't run into outs"
     - name: "Field"
       grade: "30/50"
       tags: ["Average hands", "Heavy footwork", "Clean exchange", "Athletic setup", "Choppy instincts"]
-      notes: "Blocks to both sides in game and is a vocal leader of the infield. Hands are average and the exchange is clean, but the footwork gets heavy and choppy at times. The future grade depends on cleaning up the footwork."
+      notes: "Average athlete with average footwork at best"
     - name: "Arm"
       grade: "50/60"
       tags: ["Short", "H3/4", "Accurate", "Plus life"]
-      notes: "Pop times of 1.83 to 1.86 with an 83 mph position throw. A short, accurate arm action from a high three-quarter slot with plus life, and it already limits the running game."
+      notes: "Arm stablizes defensive profile with 84 MPH throws leading to consistent 1.8 pop times. Multiple caught stealings in my look with the ability to hault the running game single handedly"
   data:
     - measure: "60 time"
       value: "7.67"
@@ -54,11 +54,11 @@ scout:
       source: "PBR form"
   traits:
     - name: "Body and projection"
-      tags: ["Small", "Strong", "Strong lower", "Wide shoulders", "Projectability some"]
-      notes: "Short at 5-8 but physically built at 192, with a strong lower half and wide shoulders. Some projection left, though most of the strength is already present."
+      tags: ["Short and stout", "Tightly wound", "Strong lower", "Wide shoulders"]
+      notes: "Some projectability to add muscle and improve quickness."
     - name: "Intangibles"
       tags: ["Athleticism average", "Body language good", "Personality great kid"]
-      notes: "Son of a coach with an intense demeanor who is constantly working to improve."
+      notes: "Great teammate with an infectious personality. Hard worker who loves baseball and wants to get better"
 ---
 
 {{< scout-report pdf="Eddie-Mitchell-Report.pdf" image="report.jpg" >}}
