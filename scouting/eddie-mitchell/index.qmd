@@ -22,23 +22,23 @@ scout:
     - name: "Hit"
       grade: "30/50"
       tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Avg balance", "Explosive bat speed", "Good approach", "In/out path"]
-      notes: "Starting couched, Mitchell employs a leg kick load but with quiet hand movements helping him find consistent barrels. Strong swing decisions with minimal chase as head stays quiet and stable throughout the swing"
+      notes: "Starting crouched, Mitchell employs a leg kick load but with quiet hand movements helping him find consistent barrels. Strong swing decisions with minimal chase as head stays quiet and stable throughout the swing."
     - name: "Power"
       grade: "30/60"
       tags: ["Explosive lower half", "Present above average bat speed"]
-      notes: "More gap-gap power presently due to in/out swing path and lack of a pull/air approach. Will post strong EVs to all fields. Above average projection relies on fixing the path to be more geared for pull side launch"
+      notes: "More gap-to-gap power presently due to in/out swing path and lack of a pull/air approach. Will post strong EVs to all fields. Above-average projection relies on fixing the path to be more geared for pull-side launch."
     - name: "Run"
       grade: "20/40"
       tags: ["Clunky catcher profile"]
-      notes: "Slow runner but with IQ to run the bases correctly. Won't run into outs"
+      notes: "Slow runner but with IQ to run the bases correctly. Won't run into outs."
     - name: "Field"
       grade: "30/50"
       tags: ["Average hands", "Heavy footwork", "Clean exchange", "Athletic setup", "Choppy instincts"]
-      notes: "Average athlete with average footwork at best"
+      notes: "Average athlete with average footwork at best. Flashed plus blocks to either side. Average receiving with sometimes too much glove movement."
     - name: "Arm"
       grade: "50/60"
       tags: ["Short", "H3/4", "Accurate", "Plus life"]
-      notes: "Arm stablizes defensive profile with 84 MPH throws leading to consistent 1.8 pop times. Multiple caught stealings in my look with the ability to hault the running game single handedly"
+      notes: "Arm stabilizes defensive profile with 83 mph throws leading to consistent 1.8 pop times. Multiple caught stealings in my look with the ability to halt the running game single-handedly."
   data:
     - measure: "60 time"
       value: "7.67"
@@ -58,7 +58,7 @@ scout:
       notes: "Some projectability to add muscle and improve quickness."
     - name: "Intangibles"
       tags: ["Athleticism average", "Body language good", "Personality great kid"]
-      notes: "Great teammate with an infectious personality. Hard worker who loves baseball and wants to get better"
+      notes: "Great teammate with an infectious personality. Hard worker who loves baseball and wants to get better."
 ---
 
 {{< scout-report pdf="Eddie-Mitchell-Report.pdf" image="report.jpg" >}}
