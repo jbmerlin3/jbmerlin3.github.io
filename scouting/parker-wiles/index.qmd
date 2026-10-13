@@ -3,19 +3,59 @@ title: "Parker Wiles"
 subtitle: "RHP, Pea Ridge HS (AR), class of 2029"
 image: thumb.jpg
 categories: [Pitcher]
+page-layout: full
 description: "Prep Baseball Report evaluation of Parker Wiles, RHP, Pea Ridge HS (AR), class of 2029."
+
+scout:
+  role: "pitcher"
+  bt: "R/R"
+  size: "5-8 / 170"
+  commit: ""
+  team: "East Coast Sox"
+  ofp: "45"
+  follow: "Follow"
+  summary: "Bulldog on the mound with competitive attitude and stuff to match."
+  pbr_url: ""
+  looks:
+    - "PBR evaluation form (Prep Baseball GA)"
+    - "East Coast Sox bracket play, 5 IP, 7 K (blog)"
+    - "Central Super Sophomore Games (Invite-Only), Aug 1, 2026, TrackMan"
+  tools:
+    - name: "Fastball"
+      grade: "20/50"
+      velo: "85.6-87.5, T88.3"
+      shape: "12.6 IVB, 12.5 HM"
+      spin: 2073
+      tags: ["Run/Ride", "Heavy", "Strikes"]
+      notes: "Heavy ball that explodes out of the hand. Plus velocity for age but average shape limits projectability of the shape. Plus command to either side, often beating righties to the spot inside."
+    - name: "Curveball"
+      grade: "20/50"
+      velo: "73.3-75.1, T75.9"
+      shape: "-6.8 IVB, -9.0 HM"
+      spin: 2269
+      tags: ["11/5", "Sharp", "Late", "Near FB arm speed", "Strikes"]
+      notes: "Consistent strikes to keep hitters off balance. Early count confidence stood out. Generated swings and misses in the zone."
+    - name: "Changeup"
+      grade: "20/40"
+      velo: "74.4"
+      shape: "3.3 IVB, 6.4 HM"
+      spin: 873
+      tags: ["Near FB arm speed", "Fade", "Strikes"]
+      notes: "Secondary offspeed to curveball, relied on more to lefties as a two strike offering. Fewer strikes but tunnels well off the FB."
+    - name: "Command"
+      grade: "20/50"
+      tags: []
+      notes: "Will try to reach back for more velo, lose mechanics and miss glove side. Feel for breaking ball is ahead of the offspeed though both flash average or better."
+  traits:
+    - name: "Delivery"
+      tags: ["High 3/4", "Quick arm", "Short", "Stiff", "Good balance", "Regular effort", "Drop and drive", "Level shoulders", "In line", "Square landing", "Athletic finish"]
+      notes: "Compact delivery that he repeats well. H3/4 arm slot (~40 degrees) consistent across all pitch types. Inconsistencies in the delivery arise when attempting to \"overthrow\" on all pitch types."
+    - name: "Body and projection"
+      tags: ["Strong frame", "Good Projectability"]
+      notes: "Will add muscle mass as he gets older, though likely will be below average height for a pitcher."
+    - name: "Intangibles"
+      tags: ["Excellent Athleticism", "Good Body language"]
+      notes: "Competes to win every pitch, FU, bulldog mentality."
 ---
 
-::: {.doc-actions}
-[Download the PDF](Parker-Wiles-Report.pdf){.btn .btn-outline-primary .btn-sm}
-:::
-
-**Summary.** The #1 player in Arkansas's 2029 class. His pitchability and confidence stood out for his age.
-
-| Pitch | Velo | Notes |
-|:-------|:-------|:------------------------------------------------|
-| Fastball | 84-86, T88 | Run and ride, heavy sinkers at times. |
-| Curveball / slider | Upper 70s | Sharp 11-to-5 shape, maintains arm speed. Trusted in early counts to premium hitters. |
-| Changeup | Upper 70s | Scattered command at times, but flashed plus fade away from lefties. |
-
-[![Click to open the full report as a PDF](report.jpg){.report-image fig-alt="Prep Baseball Report pitcher evaluation form for Parker Wiles"}](Parker-Wiles-Report.pdf)
+{{< scout-report pdf="Parker-Wiles-Report.pdf" image="report.jpg" >}}
