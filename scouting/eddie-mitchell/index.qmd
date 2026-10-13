@@ -24,7 +24,7 @@ scout:
       tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Avg balance", "Explosive bat speed", "Good approach", "In/out path"]
       notes: "Starting crouched, Mitchell employs a leg kick load but with quiet hand movements helping him find consistent barrels. Strong swing decisions with minimal chase as head stays quiet and stable throughout the swing."
     - name: "Power"
-      grade: "30/60"
+      grade: "40/60"
       tags: ["Explosive lower half", "Present above average bat speed"]
       notes: "More gap-to-gap power presently due to in/out swing path and lack of a pull/air approach. Will post strong EVs to all fields. Above-average projection relies on fixing the path to be more geared for pull-side launch."
     - name: "Run"
