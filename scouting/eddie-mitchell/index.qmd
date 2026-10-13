@@ -3,20 +3,62 @@ title: "Eddie Mitchell"
 subtitle: "C, Lenape HS (NJ), class of 2028"
 image: thumb.jpg
 categories: [Position player]
+page-layout: full
 description: "Prep Baseball Report evaluation of Eddie Mitchell, C, Lenape HS (NJ), class of 2028."
+
+scout:
+  role: "hitter"
+  bt: "R/R"
+  size: "5-8 / 192"
+  commit: ""
+  team: ""
+  ofp: ""
+  follow: ""
+  summary: "A physical catcher whose plus arm and power on both sides of the ball stand out."
+  pbr_url: ""
+  looks:
+    - "PBR evaluation form (Prep Baseball GA)"
+  tools:
+    - name: "Hit"
+      grade: "30/50"
+      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Avg balance", "Explosive bat speed", "Good approach", "In/out path", "Line drive", "Gap-to-gap", "Fluid"]
+      notes: "Starts from a crouched setup with a smooth load and short stride, keyed by a leg kick and an explosive lower half. The in/out path produces line drives gap to gap, and the bat-to-ball skill projects to handle upper-level velocity. The 50 future rests on that contact skill, with the path the main thing to clean up."
+    - name: "Power"
+      grade: "40/60"
+      tags: []
+      notes: "Immense lower-half strength and plus bat speed (80 mph swing speed) let him drive the ball with authority to all fields. The in/out path limits his pull-side air power and can lead to popups the other way. A path that works on plane unlocks the 60 future."
+    - name: "Run"
+      grade: ""
+      tags: []
+      notes: ""
+    - name: "Field"
+      grade: "30/50"
+      tags: ["Average hands", "Heavy footwork", "Clean exchange", "Athletic setup", "Choppy instincts"]
+      notes: "Blocks to both sides in game and is a vocal leader of the infield. Hands are average and the exchange is clean, but the footwork gets heavy and choppy at times. The future grade depends on cleaning up the footwork."
+    - name: "Arm"
+      grade: "50/60"
+      tags: ["Short", "H3/4", "Accurate", "Plus life"]
+      notes: "Pop times of 1.83 to 1.86 with an 83 mph position throw. A short, accurate arm action from a high three-quarter slot with plus life, and it already limits the running game."
+  data:
+    - measure: "60 time"
+      value: "7.67"
+      source: "PBR form"
+    - measure: "Position velo (C)"
+      value: "83"
+      source: "PBR form"
+    - measure: "Pop time"
+      value: "1.83-1.86"
+      source: "PBR form"
+    - measure: "Swing speed"
+      value: "80 mph"
+      source: "PBR form"
+  traits:
+    - name: "Body and projection"
+      tags: ["Small", "Strong", "Strong lower", "Wide shoulders", "Projectability some"]
+      notes: "Short at 5-8 but physically built at 192, with a strong lower half and wide shoulders. Some projection left, though most of the strength is already present."
+    - name: "Intangibles"
+      tags: ["Athleticism average", "Body language good", "Personality great kid"]
+      notes: "Son of a coach with an intense demeanor who is constantly working to improve."
 ---
 
-::: {.doc-actions}
-[Download the PDF](Eddie-Mitchell-Report.pdf){.btn .btn-outline-primary .btn-sm}
-:::
-
-**Summary.** A short-statured catcher with a physical frame showing gap-to-gap power. Pop times of 1.83 to 1.86 with an arm to control the running game.
-
-| Tool | Grade | Notes |
-|:-------|:-------|:------------------------------------------------|
-| Hit | 30/50 | Smooth load, line-drive and gap-to-gap approach. Bat-to-ball skill projects to be able to handle upper-level velocity. |
-| Power | 40/60 | Plus bat speed and immense lower-half strength. Drives the ball with authority to all fields. |
-| Arm | 50/60 | Short, accurate arm action with carry. Plus arm limits the running game. |
-| Field | 30/50 | Blocks to both sides in game and is a vocal leader of the infield. Footwork is choppy at times. |
-
-[![Click to open the full report as a PDF](report.jpg){.report-image fig-alt="Prep Baseball Report position player evaluation form for Eddie Mitchell"}](Eddie-Mitchell-Report.pdf)
+{{< scout-report pdf="Eddie-Mitchell-Report.pdf" image="report.jpg" >}}

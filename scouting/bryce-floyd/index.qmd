@@ -3,19 +3,58 @@ title: "Bryce Floyd"
 subtitle: "RHP, Holy Innocents (GA), class of 2028"
 image: thumb.jpg
 categories: [Pitcher]
+page-layout: full
 description: "Prep Baseball Report evaluation of Bryce Floyd, RHP, Holy Innocents (GA), class of 2028."
+
+scout:
+  role: "pitcher"
+  bt: "R/R"
+  size: "5-10 / 160"
+  commit: "Uncommitted"
+  team: "ProStock Baseball"
+  ofp: "40"
+  follow: "Follow"
+  summary: "Projects as a starter long term, with evident feel for spin leading to interesting pitch shapes."
+  pbr_url: ""
+  looks:
+    - "PBR evaluation form (Prep Baseball GA)"
+    - "Future Games (Class of 2028), Jul 22, 2026, TrackMan"
+  tools:
+    - name: "Fastball"
+      grade: "30/50"
+      velo: "88.2-89.5, T90.0"
+      shape: "14.3 IVB, 17.4 HM"
+      spin: 2163
+      tags: ["Run", "Heavy", "Strikes"]
+      notes: "Heavy arm-side run given lower arm slot rather than riding heater.He can lose it arm side at times but locates to both sides when he's right. The 50 future leans on added strength from a 5-10, 160 frame and steadier command, rather a new shape."
+    - name: "Slider"
+      grade: "35/60"
+      velo: "76.0-78.4, T79.3"
+      shape: "1.8 IVB, -19.0 HM"
+      spin: 2597
+      tags: ["10/4", "Sweep", "Sharp", "Late", "FB arm speed", "Strikes down and out"]
+      notes: "10/4 action off fastball arm speed. Unique feel for spin that driving aggressive above average grade. The shape varied in the TrackMan look, sweeping up to 19 inches at its best, so the present grade reflects consistency more than stuff. Ceiling to become his putaway pitch vs. righties."
+    - name: "Changeup"
+      grade: "35/60"
+      velo: "77.5-78.9, T78.9"
+      shape: "1.6 IVB, 19.7 HM"
+      spin: 1793
+      tags: ["FB arm speed", "Fade", "Strikes down and out"]
+      notes: "It tunnels well against lefties and he landed it down and away consistently. The 60 future comes from the shape being there now and the command needing to catch up. Thrown with fastball arm speed, there is real shape and velocity separation off a fastball"
+    - name: "Command"
+      grade: "30/50"
+      tags: []
+      notes: "Control fluctuates, with the fastball in the zone 52% of the time and the slider 27% in the TrackMan look. Future will depend on landing SL more conisistently which will come with a more stable, consistent delivery"
+  traits:
+    - name: "Delivery"
+      tags: ["Low 3/4", "Quick, live arm", "Long", "Loose", "Wrap", "Good balance", "Tall", "Reg effort", "Drop and drive", "Smooth rhythm", "Level shoulders", "In line", "Square landing", "Athletic finish"]
+      notes: "A long, loose and whippy arm action with a wrap from a low three-quarter slot hides the ball, and the scap load adds to the deception. Everything below the arm is clean, in line with a square landing and an athletic finish."
+    - name: "Body and projection"
+      tags: ["Projectability good"]
+      notes: "At 5-10 and 160 there's room to add strength, and that added strength is where the fastball's future grade comes from."
+    - name: "Intangibles"
+      tags: ["Athleticism excellent", "Body language average", "Personality fine"]
+      notes: "An excellent athlete on the mound who works quickly and with intent."
 ---
 
-::: {.doc-actions}
-[Download the PDF](Bryce-Floyd-Report.pdf){.btn .btn-outline-primary .btn-sm}
-:::
-
-**Summary.** Works quickly and with intent, from a deceptive, low three-quarter arm action. Shows flashes of command. Athletic mover on the mound.
-
-| Pitch | Velo | Notes |
-|:-------|:-------|:------------------------------------------------|
-| Fastball | 87-89, T91 | Heavy arm-side run. Flashed command to either side. |
-| Slider | High 70s | 10-to-4 sweep, sharp and late, thrown with fastball arm speed. |
-| Changeup | High 70s | Maintains arm speed. Tunnels well off the fastball against LHH. |
-
-[![Click to open the full report as a PDF](report.jpg){.report-image fig-alt="Prep Baseball Report pitcher evaluation form for Bryce Floyd"}](Bryce-Floyd-Report.pdf)
+{{< scout-report pdf="Bryce-Floyd-Report.pdf" image="report.jpg" >}}
