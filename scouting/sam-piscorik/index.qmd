@@ -32,12 +32,12 @@ scout:
       velo: "87-89, T90"
       shape: "15.7 IVB, 7.6 HM"
       spin: 2144
-      tags: ["Run", "Heavy", "Strikes"]
-      notes: "T90 x4 in my look, has been clocked up to 92. Some run from 3/4 slot. Located up in the zone with 2K consistently as primary out pitch."
+      tags: ["Cut Ride", "Heavy", "Strikes"]
+      notes: "T90 x4 in my look, has been clocked up to 92. Some cut ride from 3/4 slot. Located up in the zone with 2K consistently as primary out pitch."
     - name: "Sinker"
       grade: "20/50"
       velo: "85-87"
-      tags: ["15-16\" HB"]
+      tags: ["12-15\" HB"]
       notes: "Only to righties. Gets inside barrels."
     - name: "Slider"
       grade: "20/45"
