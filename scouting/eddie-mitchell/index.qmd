@@ -29,7 +29,7 @@ scout:
   tools:
     - name: "Hit"
       grade: "30/50"
-      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Average balance", "Explosive bat speed", "Good approach", "In/out path"]
+      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Average balance", "Good approach", "In/out path"]
       notes: "Starting crouched, Mitchell employs a leg kick load but with quiet hand movements helping him find consistent barrels. Strong swing decisions with minimal chase as head stays quiet and stable throughout the swing."
     - name: "Power"
       grade: "40/60"

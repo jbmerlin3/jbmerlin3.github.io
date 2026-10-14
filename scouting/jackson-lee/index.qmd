@@ -35,7 +35,7 @@ scout:
       tags: ["Quick bat speed", "Gap-to-gap"]
       notes: "Present ability to split gaps but lacks impact to project average power."
     - name: "Run"
-      grade: "50/60"
+      grade: "40/50"
       tags: []
       notes: "Not a burner but athleticism translates on the bases with the ability to steal bags and take the extra base."
     - name: "Field"

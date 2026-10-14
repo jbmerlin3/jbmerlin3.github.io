@@ -56,7 +56,7 @@ scout:
   traits:
     - name: "Delivery"
       tags: ["High 3/4 slot", "Quick, short arm action", "Good balance", "Regular effort", "Drop and drive"]
-      notes: "Compact delivery that he repeats well. H3/4 arm slot (~40 degrees) consistent across all pitch types. Inconsistencies in the delivery arise when attempting to \"overthrow\" on all pitch types."
+      notes: "Compact delivery that he repeats well. H3/4 arm slot consistent across all pitch types. Inconsistencies in the delivery arise when attempting to \"overthrow\" on all pitch types."
     - name: "Body and projection"
       tags: ["Strong frame", "Good projectability"]
       notes: "Will add muscle mass as he gets older, though likely will be below average height for a pitcher."
