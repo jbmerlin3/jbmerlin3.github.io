@@ -20,10 +20,6 @@ description: "Baseball operations and analytics portfolio: a live Statcast arsen
 <p class="hero-name" role="heading" aria-level="1">Jonathan Merlin</p>
 ```
 
-::: {.lede}
-I combine analytical fluency with in-person evaluation to see what the numbers can't
-:::
-
 ::: {.hero-bio}
 I'm a scouting apprentice at Prep Baseball GA, where I take a data-driven approach to evaluating amateur players and write scouting reports on standout players for publication. Before that I was a baseball operations intern at The Team and at Major League Baseball, where my work included salary arbitration and player development. I graduated from Washington University in St. Louis (Olin Business School) in May 2026 with a BSBA in Finance and minors in Business Analytics and the Business of Sports.
 :::
