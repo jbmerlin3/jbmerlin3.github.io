@@ -19,7 +19,7 @@ scout:
   team: "Dirtbags National"
   ofp: "45"
   follow: "Follow"
-  summary: "Projectable athlete with a live arm. Threw a power fastball with some run for strikes consistently. Developing secondaries."
+  summary: "Projectable athlete with a live arm. Threw a power fastball with a bit of cut/ride for strikes consistently. Developing secondaries."
   pbr_url: ""
   video: "clip.mp4"
   video_caption: ""
