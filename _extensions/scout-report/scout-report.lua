@@ -140,7 +140,7 @@ local function scout_report(args, kwargs, meta)
     add('<dialog class="video-modal" aria-label="Video: ' .. esc(page) .. '">')
     add('<div class="vm-head"><div class="vm-title">' .. who .. '</div>' ..
       '<button type="button" class="vm-close" aria-label="Close video">&times;</button></div>')
-    add('<video playsinline controls preload="none" poster="' .. poster .. '" src="' .. esc(video) .. '"></video>')
+    add('<video playsinline muted controls preload="none" poster="' .. poster .. '" src="' .. esc(video) .. '"></video>')
     add('<div class="vm-bar"><span class="vm-cap">' .. esc(vcap) .. '</span>' ..
       '<span class="vm-ctl"><span class="vm-lbl">Speed</span>' ..
       '<button type="button" data-rate="0.25">0.25x</button>' ..

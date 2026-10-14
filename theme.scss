@@ -159,6 +159,18 @@ main table th { font-weight: 600; }
 .quarto-grid-item.card { border: 1px solid $rule; box-shadow: none; background: transparent; }
 .quarto-grid-item.card:hover { border-color: $slate; }
 .listing-title { font-family: $font-family-sans-serif; font-weight: 700; }
+
+// Scouting board (scouting/index.qmd table listing)
+.quarto-listing-table { font-family: $font-family-sans-serif; font-size: 0.95rem; }
+.quarto-listing-table th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: $slate; font-weight: 700; }
+.quarto-listing-table td { padding: 0.65rem 0.75rem; vertical-align: middle; }
+.quarto-listing-table td.listing-title a, .quarto-listing-table td.listing-title { font-weight: 700; }
+.quarto-listing-table td.listing-ofp, .quarto-listing-table td.listing-grad { font-variant-numeric: tabular-nums; }
+.quarto-listing-table td.listing-ofp { font-weight: 800; }
+@media (max-width: 575.98px) {
+  // phones: drop School so Player through OFP fit without sideways scroll
+  .quarto-listing-table th:nth-child(3), .quarto-listing-table td.listing-school { display: none; }
+}
 // Scout report shortcode (_extensions/scout-report): one-screen report card
 body:has(.scout) .quarto-title-block .quarto-categories { display: none; }
 body:has(.scout) #title-block-header { margin: 0 0 0.1rem; }

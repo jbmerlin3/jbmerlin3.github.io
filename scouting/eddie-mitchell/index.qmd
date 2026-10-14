@@ -6,6 +6,11 @@ categories: [Position player]
 page-layout: full
 description: "Prep Baseball Report evaluation of Eddie Mitchell, C, Lenape HS (NJ), class of 2028."
 
+pos: "C"
+school: "Lenape HS (NJ)"
+grad: "2028"
+ofp: "35"
+
 scout:
   role: "hitter"
   bt: "R/R"
@@ -17,7 +22,7 @@ scout:
   summary: "A physical catcher whose plus arm and offensive power stand out."
   pbr_url: ""
   video: "clip.mp4"
-  video_caption: "In-game at-bat, side view"
+  video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA), Future Games (Class of 2028), Jul 22, 2026"
   tools:
@@ -54,6 +59,9 @@ scout:
     - measure: "Swing speed"
       value: "80 mph"
       source: "PBR form"
+    - measure: "Max exit velo"
+      value: "103 mph"
+      source: ""
   traits:
     - name: "Body and projection"
       tags: ["Short and stout", "Tightly wound", "Strong lower", "Wide shoulders"]

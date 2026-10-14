@@ -6,6 +6,11 @@ categories: [Position player]
 page-layout: full
 description: "Prep Baseball Report evaluation of Isaiah Steward, SS/2B, Buford HS (GA), class of 2028."
 
+pos: "SS/2B"
+school: "Buford HS (GA)"
+grad: "2028"
+ofp: "40"
+
 scout:
   role: "hitter"
   bt: "L/R"
@@ -17,7 +22,7 @@ scout:
   summary: "Undersized athlete with plus speed and defense with a hit over power offensive approach."
   pbr_url: ""
   video: "clip.mp4"
-  video_caption: "In-game at-bat, side view"
+  video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
   tools:

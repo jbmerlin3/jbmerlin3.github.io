@@ -105,6 +105,24 @@ def one_screen(text, folder):
     return header + body
 
 
+def board_fields(text, p):
+    """Top-level fields the Scouting Reports board table reads (it can't see inside scout:)."""
+    head_end = text.index("\n---", 3)
+    header, body = text[:head_end], text[head_end:]
+    # position comes from the page subtitle so the board and the page always agree
+    m = re.search(r'^subtitle: "([^,"]+), ([^"]+?), class of', header, flags=re.M)
+    pos = m.group(1) if m else p.get("Pos", "")
+    school = m.group(2) if m else p.get("School", "")
+    for key, val in [("pos", pos), ("school", school),
+                     ("grad", p.get("Class", "")), ("ofp", p.get("OFP", ""))]:
+        line = f"{key}: {q(str(val))}"
+        if re.search(rf"^{key}:.*$", header, flags=re.M):
+            header = re.sub(rf"^{key}:.*$", line, header, count=1, flags=re.M)
+        else:
+            header = header.replace("\nscout:", f"\n{line}\nscout:", 1)
+    return header + body
+
+
 def main():
     wb = openpyxl.load_workbook(sys.argv[1], data_only=True)
     only = set(sys.argv[2:])
@@ -124,7 +142,7 @@ def main():
             print(f"skip {slug}: no page folder yet (needs PDF, report.jpg, thumb.jpg)")
             continue
         block = scout_block(p, grades.get(slug, []), traits.get(slug, []), data.get(slug, []))
-        page.write_text(one_screen(replace_block(page.read_text(), block), page.parent))
+        page.write_text(board_fields(one_screen(replace_block(page.read_text(), block), page.parent), p))
         print(f"synced {slug}")
 
 

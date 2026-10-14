@@ -4,7 +4,7 @@ Usage: python3 scripts/prep_video.py <downloaded.mp4> scouting/<player>/ [--star
 
 Writes clip.mp4 (H.264, at most 720p tall, ~2-4 MB, starts playing before it fully
 downloads) and poster.jpg (the still shown on the page before anyone clicks).
-Needs ffmpeg. Keeps the clip's own audio, since contact sound matters on a swing.
+Needs ffmpeg. Audio is dropped: clips play silent.
 """
 import argparse
 import json
@@ -34,7 +34,7 @@ def main():
         trim += ["-to", str(a.end)]
     subprocess.run(["ffmpeg", "-y", "-v", "error", *trim, "-i", a.src,
                     "-vf", "scale=-2:'min(720,ih)'", "-c:v", "libx264", "-preset", "slow", "-crf", "26",
-                    "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(clip)],
+                    "-pix_fmt", "yuv420p", "-an", "-movflags", "+faststart", str(clip)],
                    check=True)
     # Clips already saved at 720p H.264 often come out bigger when re-encoded.
     # In that case keep the original stream untouched (just moved to fast start).
@@ -44,7 +44,7 @@ def main():
                                "stream=codec_name,height", "-of", "csv=p=0", a.src],
                               capture_output=True, text=True).stdout.strip().split(",")
         if info and info[0] == "h264" and int(info[1]) <= 720:
-            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", a.src, "-c", "copy", "-movflags", "+faststart",
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", a.src, "-c:v", "copy", "-an", "-movflags", "+faststart",
                             str(copy)], check=True)
             if copy.stat().st_size < clip.stat().st_size:
                 copy.replace(clip)

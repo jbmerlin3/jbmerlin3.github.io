@@ -6,6 +6,11 @@ categories: [Position player]
 page-layout: full
 description: "Prep Baseball Report evaluation of Jackson Lee, OF/SS, Landmark Christian HS (GA), class of 2028."
 
+pos: "OF/SS"
+school: "Landmark Christian HS (GA)"
+grad: "2028"
+ofp: "35"
+
 scout:
   role: "hitter"
   bt: "S/R"
@@ -17,7 +22,7 @@ scout:
   summary: "Well rounded profile that can impact the game in multiple different ways."
   pbr_url: ""
   video: "clip.mp4"
-  video_caption: "Batting practice, Future Games"
+  video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
   tools:

@@ -6,6 +6,11 @@ categories: [Position player]
 page-layout: full
 description: "Prep Baseball Report evaluation of Garrett Deuser, C/1B, Madison Consolidated HS (IN), class of 2028."
 
+pos: "C/1B"
+school: "Madison Consolidated HS (IN)"
+grad: "2028"
+ofp: "35"
+
 scout:
   role: "hitter"
   bt: "L/R"
@@ -17,7 +22,7 @@ scout:
   summary: "Two-sport athlete with an unorthodox swing geared for pull/air fly balls."
   pbr_url: ""
   video: "clip.mp4"
-  video_caption: "In-game home run, side view"
+  video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
   tools:

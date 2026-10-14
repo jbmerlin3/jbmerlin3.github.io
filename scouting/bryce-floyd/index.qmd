@@ -6,6 +6,11 @@ categories: [Pitcher]
 page-layout: full
 description: "Prep Baseball Report evaluation of Bryce Floyd, RHP, Holy Innocents (GA), class of 2028."
 
+pos: "RHP"
+school: "Holy Innocents (GA)"
+grad: "2028"
+ofp: "40"
+
 scout:
   role: "pitcher"
   bt: "R/R"
@@ -17,7 +22,7 @@ scout:
   summary: "Projects as a starter long term, with evident feel for spin leading to interesting pitch shapes."
   pbr_url: ""
   video: "clip.mp4"
-  video_caption: "In-game pitching, behind home plate"
+  video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
     - "Future Games (Class of 2028), Jul 22, 2026, TrackMan"

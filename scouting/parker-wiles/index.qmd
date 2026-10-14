@@ -6,6 +6,11 @@ categories: [Pitcher]
 page-layout: full
 description: "Prep Baseball Report evaluation of Parker Wiles, RHP, Pea Ridge HS (AR), class of 2029."
 
+pos: "RHP"
+school: "Pea Ridge HS (AR)"
+grad: "2029"
+ofp: "40"
+
 scout:
   role: "pitcher"
   bt: "R/R"
@@ -17,7 +22,7 @@ scout:
   summary: "Bulldog on the mound with competitive attitude and stuff to match."
   pbr_url: ""
   video: "clip.mp4"
-  video_caption: "In-game pitching, behind home plate"
+  video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
     - "East Coast Sox bracket play, 5 IP, 7 K (blog)"
