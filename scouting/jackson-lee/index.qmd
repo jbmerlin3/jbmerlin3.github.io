@@ -59,7 +59,7 @@ scout:
       notes: "Frame to expect added strength."
     - name: "Intangibles"
       tags: ["Excellent Body language", "Great kid"]
-      notes: ""
+      notes: "Above-average athlete. Plays hard."
 ---
 
 {{< scout-report pdf="Jackson-Lee-Report.pdf" image="report.jpg" >}}
