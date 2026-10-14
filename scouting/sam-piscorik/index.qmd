@@ -5,6 +5,51 @@ image: thumb.jpg
 categories: [Pitcher]
 page-layout: full
 description: "Prep Baseball Report evaluation of Sam Piscorik, RHP, Wakefield HS (NC), class of 2029."
+
+scout:
+  role: "pitcher"
+  bt: "L/R"
+  size: "6-3 / 190"
+  commit: ""
+  team: "Dirtbags National"
+  ofp: "45"
+  follow: "Follow"
+  summary: "Projectable athlete with a live arm. Threw a power fastball with some run for strikes consistently. Developing secondaries."
+  pbr_url: ""
+  video: ""
+  video_caption: ""
+  looks:
+    - "PBR evaluation form (Prep Baseball GA)"
+  tools:
+    - name: "Fastball"
+      grade: "30/50"
+      velo: "87-89, T90"
+      tags: ["Run", "Heavy", "Strikes"]
+      notes: "T90 x4 in my look, has been clocked up to 92. Some run from 3/4 slot. Located up in the zone with 2K consistently as primary out pitch."
+    - name: "Sinker"
+      grade: "20/50"
+      velo: "85-87"
+      tags: ["15-16\" HB"]
+      notes: "Only to righties. Gets inside barrels."
+    - name: "Slider"
+      grade: "20/45"
+      velo: "75-77"
+      tags: ["10/4", "Gradual", "Near FB arm speed", "Some Strikes"]
+      notes: "Landed for called strikes but also tended to overthrow leading to arm side misses or spikes. Sweeper shape, up to -19\" HB."
+    - name: "Command"
+      grade: "30/50"
+      tags: []
+      notes: "Present with FB shapes. Will need to improve feel for SL as he gets older. Repeats his delivery well with minimal moving parts leading to average projection."
+  traits:
+    - name: "Delivery"
+      tags: ["3/4", "Quick arm", "Long", "Loose", "Good balance", "Tall", "Rushes", "Reg effort", "Drop and drive", "Some rhythm", "Level shoulders", "Closed shoulders", "Direction yes", "Closed landing", "Athletic finish"]
+      notes: "Long arm action with a bit of a crossfire delivery. Slightly rushed at his balance point leads to inconsistencies with his release point. Room to add extension, currently measured at only 6 ft, which could lower release point further below the current 5.1 ft mark. Undoubtedly a live arm."
+    - name: "Body and projection"
+      tags: ["Lanky", "Athletic", "Strong legs", "High butt", "Projectability good"]
+      notes: "Prototypical pitcher build with room to add muscle in the lower half. Long limbs and high waist."
+    - name: "Intangibles"
+      tags: ["Excellent Athleticism", "Excellent Body language"]
+      notes: "Moves well on the mound, in control of his body at a young age. Extreme competitor on the mound. Family bloodlines (Brother already committed to UVA)."
 ---
 
 {{< scout-report pdf="Sam-Piscorik-Report.pdf" image="report.jpg" >}}
