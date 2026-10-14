@@ -24,7 +24,8 @@ scout:
   video: "clip.mp4"
   video_caption: ""
   looks:
-    - "PBR evaluation form (Prep Baseball GA), Future Games (Class of 2028), Jul 22, 2026"
+    - "PBR evaluation form (Prep Baseball GA)"
+    - "Future Games (Class of 2028), Jul 22, 2026"
   tools:
     - name: "Hit"
       grade: "30/50"

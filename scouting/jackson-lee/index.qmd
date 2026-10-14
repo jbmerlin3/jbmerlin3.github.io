@@ -19,7 +19,7 @@ scout:
   team: ""
   ofp: "35"
   follow: "Follow"
-  summary: "Well rounded profile that can impact the game in multiple different ways."
+  summary: "Well-rounded profile that can impact the game in multiple different ways."
   pbr_url: ""
   video: "clip.mp4"
   video_caption: ""
