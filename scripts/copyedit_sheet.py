@@ -2,7 +2,7 @@
 
 Usage: python3 scripts/copyedit_sheet.py sheet.xlsx [fixes.json]
 
-Touches only the prose cells (Players.Summary, Grades.Sentences, Traits.Sentences).
+Touches the prose cells (Players.Summary, Grades.Sentences, Traits.Sentences) and the form adjective cells.
 Always applies the mechanical rules below; fixes.json adds one-off phrase fixes as
 {"slug|column-or-row-name": [["old", "new"], ...]} or {"*": [["old", "new"], ...]}.
 Prints every change so it can be listed back to Jonathan. Wording stays his.
@@ -21,6 +21,34 @@ SPELLING = {
     "single handedly": "single-handedly",
     "gap-gap": "gap-to-gap",
 }
+
+
+# One wording per form adjective, so every report reads the same way.
+TAGS = {
+    "cut ride": "Cut ride", "some strikes": "Some strikes", "wide setup": "Wide setup",
+    "h3/4": "High 3/4 slot", "3/4": "3/4 slot", "l3/4": "Low 3/4 slot", "low 3/4 arm slot": "Low 3/4 slot",
+    "avg strength": "Average strength", "avg balance": "Average balance",
+    "projectability good": "Good projectability", "projectability some": "Some projectability",
+    "projectability very": "Plus projectability",
+    "athleticism excellent": "Excellent athleticism", "athleticism average": "Average athleticism",
+    "body language average": "Average body language", "body language good": "Good body language",
+    "body language excellent": "Excellent body language",
+    "personality fine": "Fine personality", "personality great kid": "Great kid",
+}
+
+
+def tidy_tags(text):
+    out = []
+    for tag in (x.strip() for x in str(text).split(";")):
+        if not tag:
+            continue
+        tag = TAGS.get(tag.lower(), tag)
+        # sentence case: capitalize the first word only, keep abbreviations like FB or 3/4
+        words = tag.split(" ")
+        tag = " ".join([words[0]] + [w if w.isupper() or any(ch.isdigit() for ch in w) else w.lower()
+                                     for w in words[1:]])
+        out.append(tag[0].upper() + tag[1:])
+    return "; ".join(out)
 
 
 def mechanical(text):
@@ -59,6 +87,17 @@ def main():
             if new != cell.value:
                 changes.append((label, cell.value, new))
                 cell.value = new
+    for sheet in ("Grades", "Traits"):
+        ws = wb[sheet]
+        head = [c.value for c in ws[1]]
+        ci = head.index("Form adjectives")
+        for row in ws.iter_rows(min_row=2):
+            cell = row[ci]
+            if cell.value and row[0].value:
+                new = tidy_tags(cell.value)
+                if new != cell.value:
+                    changes.append((f"{row[0].value}|{row[1].value} tags", cell.value, new))
+                    cell.value = new
     wb.save(path)
     for label, old, new in changes:
         print(f"{label}\n  - {old}\n  + {new}")
