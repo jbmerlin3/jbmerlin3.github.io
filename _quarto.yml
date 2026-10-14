@@ -5,6 +5,7 @@ project:
     - files/
     - images/
     - robots.txt
+    - "scouting/*/clip.mp4"   # scouting video, referenced from raw HTML so Quarto can't detect it
 
 website:
   title: "Jonathan Merlin"

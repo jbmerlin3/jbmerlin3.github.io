@@ -16,8 +16,8 @@ scout:
   follow: "Follow"
   summary: "Two-sport athlete with an unorthodox swing geared for pull/air fly balls."
   pbr_url: ""
-  video: ""
-  video_caption: ""
+  video: "clip.mp4"
+  video_caption: "In-game home run, side view"
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
   tools:

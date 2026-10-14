@@ -36,6 +36,20 @@ def main():
                     "-vf", "scale=-2:'min(720,ih)'", "-c:v", "libx264", "-preset", "slow", "-crf", "26",
                     "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(clip)],
                    check=True)
+    # Clips already saved at 720p H.264 often come out bigger when re-encoded.
+    # In that case keep the original stream untouched (just moved to fast start).
+    if a.start is None and a.end is None:
+        copy = folder / "clip-copy.mp4"
+        info = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                               "stream=codec_name,height", "-of", "csv=p=0", a.src],
+                              capture_output=True, text=True).stdout.strip().split(",")
+        if info and info[0] == "h264" and int(info[1]) <= 720:
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", a.src, "-c", "copy", "-movflags", "+faststart",
+                            str(copy)], check=True)
+            if copy.stat().st_size < clip.stat().st_size:
+                copy.replace(clip)
+            else:
+                copy.unlink()
     # poster from a third of the way in, past any lead-in
     t = duration(clip) / 3
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{t:.2f}", "-i", str(clip), "-frames:v", "1",

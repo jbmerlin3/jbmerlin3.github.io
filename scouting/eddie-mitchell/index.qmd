@@ -12,10 +12,12 @@ scout:
   size: "5-8 / 192"
   commit: "Rutgers"
   team: ""
-  ofp: "40"
+  ofp: "35"
   follow: "Follow"
   summary: "A physical catcher whose plus arm and offensive power stand out."
   pbr_url: ""
+  video: "clip.mp4"
+  video_caption: "In-game at-bat, side view"
   looks:
     - "PBR evaluation form (Prep Baseball GA), Future Games (Class of 2028), Jul 22, 2026"
   tools:
@@ -52,9 +54,6 @@ scout:
     - measure: "Swing speed"
       value: "80 mph"
       source: "PBR form"
-    - measure: "Max exit velo"
-      value: "103 mph"
-      source: ""
   traits:
     - name: "Body and projection"
       tags: ["Short and stout", "Tightly wound", "Strong lower", "Wide shoulders"]

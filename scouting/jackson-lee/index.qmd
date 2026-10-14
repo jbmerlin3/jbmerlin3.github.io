@@ -12,10 +12,12 @@ scout:
   size: "5-11 / 153"
   commit: "South Florida"
   team: ""
-  ofp: "40"
+  ofp: "35"
   follow: "Follow"
   summary: "Well rounded profile that can impact the game in multiple different ways."
   pbr_url: ""
+  video: "clip.mp4"
+  video_caption: "Batting practice, Future Games"
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
   tools:

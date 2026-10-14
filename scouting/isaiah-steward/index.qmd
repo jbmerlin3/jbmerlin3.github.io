@@ -16,6 +16,8 @@ scout:
   follow: "Follow"
   summary: "Undersized athlete with plus speed and defense with a hit over power offensive approach."
   pbr_url: ""
+  video: "clip.mp4"
+  video_caption: "In-game at-bat, side view"
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
   tools:

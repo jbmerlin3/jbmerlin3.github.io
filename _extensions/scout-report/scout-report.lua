@@ -124,23 +124,55 @@ local function scout_report(args, kwargs, meta)
     add(":::::")
   end
   -- One clip per player: a tile beside the form that opens the video in a pop-up.
-  -- preload="none" so nothing downloads until someone clicks.
+  -- preload="none" so nothing downloads until someone clicks. The pop-up carries
+  -- slow-motion speeds and a loop toggle, the two things a scout reaches for first.
   local video, vcap = s(sc.video), s(sc.video_caption)
   if video ~= "" then
     local poster = video:gsub("[^/]+$", "poster.jpg")
     local esc = function(x) return (x:gsub("&", "&amp;"):gsub('"', "&quot;"):gsub("<", "&lt;")) end
+    local who = esc(page) .. (s(meta.subtitle) ~= "" and ('<span class="vm-sub">' .. esc(s(meta.subtitle)) .. '</span>') or "")
     add("```{=html}")
     add('<div class="scout-video">')
     add('<button type="button" class="video-tile" aria-label="Play video' ..
-      (vcap ~= "" and (": " .. esc(vcap)) or "") .. '" onclick="scoutVideo(this)">')
+      (vcap ~= "" and (": " .. esc(vcap)) or "") .. '" onclick="scoutVideo.open(this)">')
     add('<img src="' .. poster .. '" alt=""><span class="play" aria-hidden="true"></span></button>')
     add('<span class="form-label">Video</span>')
-    add('<dialog class="video-modal" onclick="if(event.target===this)this.close()" onclose="this.querySelector(\'video\').pause()">')
-    add('<video controls playsinline preload="none" poster="' .. poster .. '" src="' .. esc(video) .. '"></video>')
-    add('<div class="video-bar"><span>' .. esc(vcap) .. '</span>' ..
-      '<button type="button" class="video-close" onclick="this.closest(\'dialog\').close()" aria-label="Close video">Close</button></div>')
+    add('<dialog class="video-modal" aria-label="Video: ' .. esc(page) .. '">')
+    add('<div class="vm-head"><div class="vm-title">' .. who .. '</div>' ..
+      '<button type="button" class="vm-close" aria-label="Close video">&times;</button></div>')
+    add('<video playsinline controls preload="none" poster="' .. poster .. '" src="' .. esc(video) .. '"></video>')
+    add('<div class="vm-bar"><span class="vm-cap">' .. esc(vcap) .. '</span>' ..
+      '<span class="vm-ctl"><span class="vm-lbl">Speed</span>' ..
+      '<button type="button" data-rate="0.25">0.25x</button>' ..
+      '<button type="button" data-rate="0.5">0.5x</button>' ..
+      '<button type="button" data-rate="1" aria-pressed="true">1x</button>' ..
+      '<button type="button" class="vm-loop" aria-pressed="false">Loop</button></span></div>')
     add('</dialog></div>')
-    add('<script>function scoutVideo(b){var d=b.parentNode.querySelector("dialog");d.showModal();d.querySelector("video").play();}</script>')
+    add([[<script>
+window.scoutVideo = window.scoutVideo || {
+  open: function (tile) {
+    var d = tile.parentNode.querySelector("dialog"), v = d.querySelector("video");
+    if (!d.dataset.wired) {
+      d.dataset.wired = "1";
+      d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+      d.addEventListener("close", function () { v.pause(); });
+      d.querySelector(".vm-close").addEventListener("click", function () { d.close(); });
+      d.querySelectorAll("[data-rate]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          v.playbackRate = parseFloat(b.dataset.rate);
+          d.querySelectorAll("[data-rate]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        });
+      });
+      var loop = d.querySelector(".vm-loop");
+      loop.addEventListener("click", function () {
+        v.loop = !v.loop; loop.setAttribute("aria-pressed", v.loop);
+      });
+    }
+    d.showModal();
+    var p = v.play(); if (p && p.catch) p.catch(function () {});
+  }
+};
+</script>]])
     add("```")
   end
   add("::::: {.scout-ofp}")

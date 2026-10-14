@@ -16,6 +16,8 @@ scout:
   follow: "Follow"
   summary: "Projects as a starter long term, with evident feel for spin leading to interesting pitch shapes."
   pbr_url: ""
+  video: "clip.mp4"
+  video_caption: "In-game pitching, behind home plate"
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
     - "Future Games (Class of 2028), Jul 22, 2026, TrackMan"
