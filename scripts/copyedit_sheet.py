@@ -98,6 +98,17 @@ def main():
                 if new != cell.value:
                     changes.append((f"{row[0].value}|{row[1].value} tags", cell.value, new))
                     cell.value = new
+    # Horizontal movement is written HB (horizontal break) everywhere, never HM
+    ws = wb["Grades"]
+    head = [c.value for c in ws[1]]
+    si = head.index("Shape")
+    for row in ws.iter_rows(min_row=2):
+        cell = row[si]
+        if cell.value and row[0].value:
+            new = re.sub(r"\bHM\b", "HB", str(cell.value))
+            if new != cell.value:
+                changes.append((f"{row[0].value}|{row[1].value} shape", cell.value, new))
+                cell.value = new
     wb.save(path)
     for label, old, new in changes:
         print(f"{label}\n  - {old}\n  + {new}")

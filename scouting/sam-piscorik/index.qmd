@@ -30,20 +30,20 @@ scout:
     - name: "Fastball"
       grade: "30/50"
       velo: "87-89, T90"
-      shape: "15.7 IVB, 7.6 HM"
+      shape: "15.7 IVB, 7.6 HB"
       spin: 2144
       tags: ["Cut ride", "Heavy", "Strikes"]
       notes: "T90 x4 in my look, has been clocked up to 92. Some cut ride from 3/4 slot. Located up in the zone with 2K consistently as primary out pitch."
     - name: "Sinker"
       grade: "20/50"
       velo: "85-87"
-      shape: "12-15 HM"
+      shape: "12-15 HB"
       tags: []
       notes: "Only to righties. Gets inside barrels."
     - name: "Slider"
       grade: "20/45"
       velo: "75-77"
-      shape: "-7.3 IVB, -15.9 HM"
+      shape: "-7.3 IVB, -15.9 HB"
       spin: 2189
       tags: ["10/4", "Gradual", "Near FB arm speed", "Some strikes"]
       notes: "Landed for called strikes but also tended to overthrow leading to arm side misses or spikes. Sweeper shape, up to -19\" HB."
