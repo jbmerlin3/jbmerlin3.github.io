@@ -54,8 +54,8 @@ scout:
       notes: "Control fluctuates, with the fastball in the zone 52% of the time and the slider 27% in the TrackMan look. Future will depend on landing SL more consistently, which will come with a more stable, consistent delivery."
   traits:
     - name: "Delivery"
-      tags: ["Low 3/4", "Quick, live arm", "Long", "Loose", "Wrap", "Good balance", "Tall", "Reg effort", "Drop and drive", "Smooth rhythm", "Level shoulders", "In line", "Square landing", "Athletic finish"]
-      notes: "A long, loose and whippy arm action with a wrap from a low three-quarter slot hides the ball, and the scap load adds to the deception. Everything below the arm is clean, in line with a square landing and an athletic finish."
+      tags: ["Low 3/4 arm slot", "Plus arm speed", "Good balance", "Regular effort", "Drop and drive"]
+      notes: "A long, loose and whippy arm action with a wrap from a low three-quarter slot hides the ball, and the scap load adds to the deception. Everything below the arm is clean, in line with a square landing and an athletic finish. Present arm speed stands out."
     - name: "Body and projection"
       tags: ["Projectability good"]
       notes: "At 5-10 and 160 there's room to add strength, and that added strength is where the fastball's future grade comes from."
