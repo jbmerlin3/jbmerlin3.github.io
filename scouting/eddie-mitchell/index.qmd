@@ -24,11 +24,12 @@ scout:
   video: "clip.mp4"
   video_caption: ""
   looks:
-    - "PBR evaluation form (Prep Baseball GA), Future Games (Class of 2028), Jul 22, 2026"
+    - "PBR evaluation form (Prep Baseball GA)"
+    - "Future Games (Class of 2028), Jul 22, 2026"
   tools:
     - name: "Hit"
       grade: "30/50"
-      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Avg balance", "Explosive bat speed", "Good approach", "In/out path"]
+      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Average balance", "Good approach", "In/out path"]
       notes: "Starting crouched, Mitchell employs a leg kick load but with quiet hand movements helping him find consistent barrels. Strong swing decisions with minimal chase as head stays quiet and stable throughout the swing."
     - name: "Power"
       grade: "40/60"
@@ -44,30 +45,30 @@ scout:
       notes: "Average athlete with average footwork at best. Flashed plus blocks to either side. Average receiving with sometimes too much glove movement."
     - name: "Arm"
       grade: "50/60"
-      tags: ["Short", "H3/4", "Accurate", "Plus life"]
+      tags: ["Short", "High 3/4 slot", "Accurate", "Plus life"]
       notes: "Arm stabilizes defensive profile with 83 mph throws leading to consistent 1.8 pop times. Multiple caught stealings in my look with the ability to halt the running game single-handedly."
   data:
     - measure: "60 time"
       value: "7.67"
       source: "PBR form"
     - measure: "Position velo (C)"
-      value: "83"
+      value: "83 mph"
       source: "PBR form"
     - measure: "Pop time"
       value: "1.83-1.86"
       source: "PBR form"
-    - measure: "Swing speed"
-      value: "80 mph"
-      source: "PBR form"
     - measure: "Max exit velo"
       value: "103 mph"
       source: ""
+    - measure: "Bat speed"
+      value: "80 mph"
+      source: "PBR form"
   traits:
     - name: "Body and projection"
       tags: ["Short and stout", "Tightly wound", "Strong lower", "Wide shoulders"]
       notes: "Some projectability to add muscle and improve quickness."
     - name: "Intangibles"
-      tags: ["Athleticism average", "Body language good", "Personality great kid"]
+      tags: ["Average athleticism", "Good body language", "Great kid"]
       notes: "Great teammate with an infectious personality. Hard worker who loves baseball and wants to get better."
 ---
 

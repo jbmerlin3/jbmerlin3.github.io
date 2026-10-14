@@ -37,14 +37,14 @@ scout:
     - name: "Run"
       grade: "60/70"
       tags: ["Burner"]
-      notes: "6.55 60 comfortably gives Steward plus speed which he'll use in all three phases of the game. Offensively, he'll routinely push for extra bases, and it will be tough for an average pop time to stop him from stealing. Defensively, speed plays at SS, 2B and could translate well in CF."
+      notes: "His 6.55 60 time comfortably gives Steward plus speed which he'll use in all three phases of the game. Offensively, he'll routinely push for extra bases, and it will be tough for an average pop time to stop him from stealing. Defensively, speed plays at SS, 2B and could translate well in CF."
     - name: "Field"
       grade: "30/50"
       tags: ["Soft hands", "Quick, fluid footwork", "Quick, clean exchange", "Athletic", "Plays through"]
-      notes: "Shined at SS but profiles more as a 2B. Athletic enough to make special players, with speed to cover all the ground he needs too. Soft hands and fluid transitions on routine plays. Turned multiple unassisted double plays in my look."
+      notes: "Shined at SS but profiles more as a 2B. Athletic enough to make special plays, with speed to cover all the ground he needs to. Soft hands and fluid transitions on routine plays. Turned multiple unassisted double plays in my look."
     - name: "Arm"
       grade: "30/50"
-      tags: ["Loose", "3/4", "Accurate", "Avg strength"]
+      tags: ["Loose", "3/4 slot", "Accurate", "Average strength"]
       notes: "Currently average strength for his age, Steward doesn't project to have a plus arm, but he was accurate with his throws both routine and off platform."
   data:
     - measure: "60 time"
@@ -61,10 +61,10 @@ scout:
       source: "PBR overall, Class of 2028"
   traits:
     - name: "Body and projection"
-      tags: ["Small", "Athletic", "Some Projectability"]
-      notes: "Short stature but wiry and can comfortably can add more muscle, especially in the lower half."
+      tags: ["Small", "Athletic", "Some projectability"]
+      notes: "Short stature but wiry and can comfortably add more muscle, especially in the lower half."
     - name: "Intangibles"
-      tags: ["Freak Athleticism", "Excellent Body language"]
+      tags: ["Freak athleticism", "Excellent body language"]
       notes: "Quality teammate who genuinely enjoys playing baseball. Hard worker."
 ---
 

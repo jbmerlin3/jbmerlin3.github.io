@@ -28,7 +28,7 @@ scout:
   tools:
     - name: "Hit"
       grade: "20/40"
-      tags: ["Wide Setup", "Balance", "Crouch", "Long stride", "Dives", "Leg kick", "OK lower half", "Fast bat speed", "Advanced approach", "Short path", "Power/pull"]
+      tags: ["Wide setup", "Balance", "Crouch", "Long stride", "Dives", "Leg kick", "OK lower half", "Fast bat speed", "Advanced approach", "Short path", "Power/pull"]
       notes: "Wide base with high hands and large leg kick. Remains balanced through load and still stays short to the ball. Proven track record to hit plus velocity. Creates plus hand and bat speed."
     - name: "Power"
       grade: "30/60"
@@ -44,7 +44,7 @@ scout:
       notes: "Slight pause/hitch between transfer and throw. Could gain more ground with footwork."
     - name: "Arm"
       grade: "20/40"
-      tags: ["Short", "Stiff", "Over the top", "Accurate", "Avg strength"]
+      tags: ["Short", "Stiff", "Over the top", "Accurate", "Average strength"]
       notes: "Short arm action from over the top slot. Average velocities and consistently on the bag."
   data:
     - measure: "60 time"
@@ -61,10 +61,10 @@ scout:
       source: "Blog"
   traits:
     - name: "Body and projection"
-      tags: ["Strong", "Donkey", "Strong lower", "Wide shoulders", "Some Projectability"]
+      tags: ["Strong", "Donkey", "Strong lower", "Wide shoulders", "Some projectability"]
       notes: "Football player (LB) strength, translates to power."
     - name: "Intangibles"
-      tags: ["Average Athleticism", "Excellent Body language", "Excellent Personality"]
+      tags: ["Average athleticism", "Excellent body language", "Excellent personality"]
       notes: "One of the best kids I've met on the trail with an infectious personality and a great teammate. Average athleticism with some stiffness."
 ---
 

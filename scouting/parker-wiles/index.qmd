@@ -31,21 +31,21 @@ scout:
     - name: "Fastball"
       grade: "20/50"
       velo: "85.6-87.5, T88.3"
-      shape: "12.6 IVB, 12.5 HM"
+      shape: "12.6 IVB, 12.5 HB"
       spin: 2073
       tags: ["Run/Ride", "Heavy", "Strikes"]
       notes: "Heavy ball that explodes out of the hand. Plus velocity for age but average shape limits projectability of the shape. Plus command to either side, often beating righties to the spot inside."
     - name: "Curveball"
       grade: "20/50"
       velo: "73.3-75.1, T75.9"
-      shape: "-6.8 IVB, -9.0 HM"
+      shape: "-6.8 IVB, -9.0 HB"
       spin: 2269
       tags: ["11/5", "Sharp", "Late", "Near FB arm speed", "Strikes"]
       notes: "Consistent strikes to keep hitters off balance. Early count confidence stood out. Generated swings and misses in the zone."
     - name: "Changeup"
       grade: "20/40"
       velo: "74.4"
-      shape: "3.3 IVB, 6.4 HM"
+      shape: "3.3 IVB, 6.4 HB"
       spin: 873
       tags: ["Near FB arm speed", "Fade", "Strikes"]
       notes: "Secondary offspeed to curveball, relied on more to lefties as a two strike offering. Fewer strikes but tunnels well off the FB."
@@ -55,13 +55,13 @@ scout:
       notes: "Will try to reach back for more velo, lose mechanics and miss glove side. Feel for breaking ball is ahead of the offspeed though both flash average or better."
   traits:
     - name: "Delivery"
-      tags: ["High 3/4 slot", "Quick arm short arm action", "Good balance", "Regular effort", "Drop and drive"]
-      notes: "Compact delivery that he repeats well. H3/4 arm slot (~40 degrees) consistent across all pitch types. Inconsistencies in the delivery arise when attempting to \"overthrow\" on all pitch types."
+      tags: ["High 3/4 slot", "Quick, short arm action", "Good balance", "Regular effort", "Drop and drive"]
+      notes: "Compact delivery that he repeats well. H3/4 arm slot consistent across all pitch types. Inconsistencies in the delivery arise when attempting to \"overthrow\" on all pitch types."
     - name: "Body and projection"
-      tags: ["Strong frame", "Good Projectability"]
+      tags: ["Strong frame", "Good projectability"]
       notes: "Will add muscle mass as he gets older, though likely will be below average height for a pitcher."
     - name: "Intangibles"
-      tags: ["Excellent Athleticism", "Good Body language"]
+      tags: ["Excellent athleticism", "Good body language"]
       notes: "Competes to win every pitch, FU, bulldog mentality."
 ---
 
