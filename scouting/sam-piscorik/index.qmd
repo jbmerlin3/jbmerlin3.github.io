@@ -25,10 +25,13 @@ scout:
   video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
+    - "East Coast Super Sophomore Games (Class of 2029), Jul 31, 2026, TrackMan"
   tools:
     - name: "Fastball"
       grade: "30/50"
       velo: "87-89, T90"
+      shape: "15.7 IVB, 7.6 HM"
+      spin: 2144
       tags: ["Run", "Heavy", "Strikes"]
       notes: "T90 x4 in my look, has been clocked up to 92. Some run from 3/4 slot. Located up in the zone with 2K consistently as primary out pitch."
     - name: "Sinker"
@@ -39,6 +42,8 @@ scout:
     - name: "Slider"
       grade: "20/45"
       velo: "75-77"
+      shape: "-7.3 IVB, -15.9 HM"
+      spin: 2189
       tags: ["10/4", "Gradual", "Near FB arm speed", "Some Strikes"]
       notes: "Landed for called strikes but also tended to overthrow leading to arm side misses or spikes. Sweeper shape, up to -19\" HB."
     - name: "Command"
