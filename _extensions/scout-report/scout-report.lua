@@ -220,7 +220,7 @@ window.scoutVideo = window.scoutVideo || {
   add("::::: {.scout-side}")
   local traits = list(sc.traits)
   if #traits > 0 then
-    add("[From the PBR form]{.scout-h}\n")
+    add("[Player Profile]{.scout-h}\n")
     for _, g in ipairs(traits) do
       local name = s(g.name)
       check_entry(page, "Trait group", name, g, false)
