@@ -52,7 +52,7 @@ scout:
       notes: "Present with FB shapes. Will need to improve feel for SL as he gets older. Repeats his delivery well with minimal moving parts leading to average projection."
   traits:
     - name: "Delivery"
-      tags: ["3/4", "Quick arm", "Long", "Loose", "Good balance", "Tall", "Rushes", "Reg effort", "Drop and drive", "Some rhythm", "Level shoulders", "Closed shoulders", "Direction yes", "Closed landing", "Athletic finish"]
+      tags: ["Long and loose", "Good balance", "Tall", "Rushes", "Regular effort", "Drop and drive"]
       notes: "Long arm action with a bit of a crossfire delivery. Slightly rushed at his balance point leads to inconsistencies with his release point. Room to add extension, currently measured at only 6 ft, which could lower release point further below the current 5.1 ft mark. Undoubtedly a live arm."
     - name: "Body and projection"
       tags: ["Lanky", "Athletic", "Strong legs", "High butt", "Projectability good"]

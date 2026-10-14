@@ -55,7 +55,7 @@ scout:
       notes: "Will try to reach back for more velo, lose mechanics and miss glove side. Feel for breaking ball is ahead of the offspeed though both flash average or better."
   traits:
     - name: "Delivery"
-      tags: ["High 3/4", "Quick arm", "Short", "Stiff", "Good balance", "Regular effort", "Drop and drive", "Level shoulders", "In line", "Square landing", "Athletic finish"]
+      tags: ["High 3/4 slot", "Quick arm short arm action", "Good balance", "Regular effort", "Drop and drive"]
       notes: "Compact delivery that he repeats well. H3/4 arm slot (~40 degrees) consistent across all pitch types. Inconsistencies in the delivery arise when attempting to \"overthrow\" on all pitch types."
     - name: "Body and projection"
       tags: ["Strong frame", "Good Projectability"]
