@@ -44,7 +44,7 @@ scout:
       notes: "Shined at SS but profiles more as a 2B. Athletic enough to make special players, with speed to cover all the ground he needs too. Soft hands and fluid transitions on routine plays. Turned multiple unassisted double plays in my look."
     - name: "Arm"
       grade: "30/50"
-      tags: ["Loose", "3/4", "Accurate", "Avg strength"]
+      tags: ["Loose", "3/4 slot", "Accurate", "Average strength"]
       notes: "Currently average strength for his age, Steward doesn't project to have a plus arm, but he was accurate with his throws both routine and off platform."
   data:
     - measure: "60 time"
@@ -61,10 +61,10 @@ scout:
       source: "PBR overall, Class of 2028"
   traits:
     - name: "Body and projection"
-      tags: ["Small", "Athletic", "Some Projectability"]
+      tags: ["Small", "Athletic", "Some projectability"]
       notes: "Short stature but wiry and can comfortably can add more muscle, especially in the lower half."
     - name: "Intangibles"
-      tags: ["Freak Athleticism", "Excellent Body language"]
+      tags: ["Freak athleticism", "Excellent body language"]
       notes: "Quality teammate who genuinely enjoys playing baseball. Hard worker."
 ---
 
