@@ -40,14 +40,14 @@ scout:
       shape: "1.8 IVB, -19.0 HM"
       spin: 2597
       tags: ["10/4", "Sweep", "Sharp", "Late", "FB arm speed", "Strikes down and out"]
-      notes: "10/4 action off fastball arm speed. Unique feel for spin that drives an aggressive above-average grade. The shape varied in the TrackMan look, sweeping up to 19 inches at its best, so the present grade reflects consistency more than stuff. Ceiling to become his putaway pitch vs. righties."
+      notes: "10/4 action off fastball arm speed. Unique feel for spin that drives an aggressive grade. The shape varied in the TrackMan look, sweeping up to 19 inches at its best, so the present grade reflects consistency more than stuff. Ceiling to become his putaway pitch vs. righties."
     - name: "Changeup"
       grade: "30/50"
       velo: "77.5-78.9, T78.9"
       shape: "1.6 IVB, 19.7 HM"
       spin: 1793
       tags: ["FB arm speed", "Fade", "Strikes down and out"]
-      notes: "It tunnels well against lefties and he landed it down and away consistently. The 60 future comes from the shape being there now and the command needing to catch up. Thrown with fastball arm speed, there is real shape and velocity separation off a fastball."
+      notes: "It tunnels well against lefties and he landed it down and away consistently. The 50 future comes from the shape being there now and the command needing to catch up. Thrown with fastball arm speed, there is real shape and velocity separation off a fastball."
     - name: "Command"
       grade: "30/50"
       tags: []
