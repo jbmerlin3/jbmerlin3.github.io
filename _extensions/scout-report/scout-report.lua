@@ -123,6 +123,26 @@ local function scout_report(args, kwargs, meta)
     add("[PBR form]{.form-label}")
     add(":::::")
   end
+  -- One clip per player: a tile beside the form that opens the video in a pop-up.
+  -- preload="none" so nothing downloads until someone clicks.
+  local video, vcap = s(sc.video), s(sc.video_caption)
+  if video ~= "" then
+    local poster = video:gsub("[^/]+$", "poster.jpg")
+    local esc = function(x) return (x:gsub("&", "&amp;"):gsub('"', "&quot;"):gsub("<", "&lt;")) end
+    add("```{=html}")
+    add('<div class="scout-video">')
+    add('<button type="button" class="video-tile" aria-label="Play video' ..
+      (vcap ~= "" and (": " .. esc(vcap)) or "") .. '" onclick="scoutVideo(this)">')
+    add('<img src="' .. poster .. '" alt=""><span class="play" aria-hidden="true"></span></button>')
+    add('<span class="form-label">Video</span>')
+    add('<dialog class="video-modal" onclick="if(event.target===this)this.close()" onclose="this.querySelector(\'video\').pause()">')
+    add('<video controls playsinline preload="none" poster="' .. poster .. '" src="' .. esc(video) .. '"></video>')
+    add('<div class="video-bar"><span>' .. esc(vcap) .. '</span>' ..
+      '<button type="button" class="video-close" onclick="this.closest(\'dialog\').close()" aria-label="Close video">Close</button></div>')
+    add('</dialog></div>')
+    add('<script>function scoutVideo(b){var d=b.parentNode.querySelector("dialog");d.showModal();d.querySelector("video").play();}</script>')
+    add("```")
+  end
   add("::::: {.scout-ofp}")
   add("[" .. (ofp ~= "" and ofp or "–") .. "]{.ofp-num}")
   add("[OFP]{.ofp-label}")

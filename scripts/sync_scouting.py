@@ -49,7 +49,7 @@ def scout_block(p, grades, traits, data):
     out.append(f"  role: {q(p['Role'])}")
     for key, col in [("bt", "B/T"), ("size", "Ht/Wt"), ("commit", "Commit"), ("team", "Travel team"),
                      ("ofp", "OFP"), ("follow", "Follow"), ("summary", "Summary"),
-                     ("pbr_url", "PBR blog URL")]:
+                     ("pbr_url", "PBR blog URL"), ("video", "Video file"), ("video_caption", "Video caption")]:
         out.append(f"  {key}: {q(p.get(col, ''))}")
     looks = split(p.get("Looks", ""))
     if looks:
