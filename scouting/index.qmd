@@ -3,14 +3,19 @@ title: "Scouting Reports"
 subtitle: "Amateur evaluations written as a scouting apprentice at Prep Baseball GA"
 listing:
   contents: "*/index.qmd"
-  sort: "title"
-  type: grid
-  grid-columns: 2
-  image-height: 220px
-  categories: true
-  sort-ui: false
+  # A follow list, sorted the way a board is: best OFP first, then name
+  type: table
+  sort: ["ofp desc", "title"]
+  fields: [title, pos, school, grad, ofp]
+  field-display-names:
+    title: Player
+    pos: Pos
+    school: School
+    grad: Class
+    ofp: OFP
+  sort-ui: [title, pos, school, grad, ofp]
   filter-ui: false
-  fields: [image, title, subtitle]
+  table-hover: true
 description: "Amateur scouting reports written for Prep Baseball Report."
 image: /images/social-card.png
 ---

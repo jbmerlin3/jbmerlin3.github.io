@@ -3,20 +3,72 @@ title: "Eddie Mitchell"
 subtitle: "C, Lenape HS (NJ), class of 2028"
 image: thumb.jpg
 categories: [Position player]
+page-layout: full
 description: "Prep Baseball Report evaluation of Eddie Mitchell, C, Lenape HS (NJ), class of 2028."
+
+pos: "C"
+school: "Lenape HS (NJ)"
+grad: "2028"
+ofp: "35"
+
+scout:
+  role: "hitter"
+  bt: "R/R"
+  size: "5-8 / 192"
+  commit: "Rutgers"
+  team: ""
+  ofp: "35"
+  follow: "Follow"
+  summary: "A physical catcher whose plus arm and offensive power stand out."
+  pbr_url: ""
+  video: "clip.mp4"
+  video_caption: ""
+  looks:
+    - "PBR evaluation form (Prep Baseball GA), Future Games (Class of 2028), Jul 22, 2026"
+  tools:
+    - name: "Hit"
+      grade: "30/50"
+      tags: ["Crouch", "Smooth load", "Short stride", "Leg kick", "Explosive lower half", "Avg balance", "Explosive bat speed", "Good approach", "In/out path"]
+      notes: "Starting crouched, Mitchell employs a leg kick load but with quiet hand movements helping him find consistent barrels. Strong swing decisions with minimal chase as head stays quiet and stable throughout the swing."
+    - name: "Power"
+      grade: "40/60"
+      tags: ["Explosive lower half", "Present above average bat speed"]
+      notes: "More gap-to-gap power presently due to in/out swing path and lack of a pull/air approach. Will post strong EVs to all fields. Above-average projection relies on fixing the path to be more geared for pull-side launch."
+    - name: "Run"
+      grade: "20/40"
+      tags: ["Clunky catcher profile"]
+      notes: "Slow runner but with IQ to run the bases correctly. Won't run into outs."
+    - name: "Field"
+      grade: "30/50"
+      tags: ["Average hands", "Heavy footwork", "Clean exchange", "Athletic setup", "Choppy instincts"]
+      notes: "Average athlete with average footwork at best. Flashed plus blocks to either side. Average receiving with sometimes too much glove movement."
+    - name: "Arm"
+      grade: "50/60"
+      tags: ["Short", "H3/4", "Accurate", "Plus life"]
+      notes: "Arm stabilizes defensive profile with 83 mph throws leading to consistent 1.8 pop times. Multiple caught stealings in my look with the ability to halt the running game single-handedly."
+  data:
+    - measure: "60 time"
+      value: "7.67"
+      source: "PBR form"
+    - measure: "Position velo (C)"
+      value: "83"
+      source: "PBR form"
+    - measure: "Pop time"
+      value: "1.83-1.86"
+      source: "PBR form"
+    - measure: "Swing speed"
+      value: "80 mph"
+      source: "PBR form"
+    - measure: "Max exit velo"
+      value: "103 mph"
+      source: ""
+  traits:
+    - name: "Body and projection"
+      tags: ["Short and stout", "Tightly wound", "Strong lower", "Wide shoulders"]
+      notes: "Some projectability to add muscle and improve quickness."
+    - name: "Intangibles"
+      tags: ["Athleticism average", "Body language good", "Personality great kid"]
+      notes: "Great teammate with an infectious personality. Hard worker who loves baseball and wants to get better."
 ---
 
-::: {.doc-actions}
-[Download the PDF](Eddie-Mitchell-Report.pdf){.btn .btn-outline-primary .btn-sm}
-:::
-
-**Summary.** A short-statured catcher with a physical frame showing gap-to-gap power. Pop times of 1.83 to 1.86 with an arm to control the running game.
-
-| Tool | Grade | Notes |
-|:-------|:-------|:------------------------------------------------|
-| Hit | 30/50 | Smooth load, line-drive and gap-to-gap approach. Bat-to-ball skill projects to be able to handle upper-level velocity. |
-| Power | 40/60 | Plus bat speed and immense lower-half strength. Drives the ball with authority to all fields. |
-| Arm | 50/60 | Short, accurate arm action with carry. Plus arm limits the running game. |
-| Field | 30/50 | Blocks to both sides in game and is a vocal leader of the infield. Footwork is choppy at times. |
-
-[![Click to open the full report as a PDF](report.jpg){.report-image fig-alt="Prep Baseball Report position player evaluation form for Eddie Mitchell"}](Eddie-Mitchell-Report.pdf)
+{{< scout-report pdf="Eddie-Mitchell-Report.pdf" image="report.jpg" >}}

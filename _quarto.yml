@@ -1,10 +1,14 @@
 project:
   type: website
   output-dir: _site
+  # Pages are .qmd only, so the repo's README and CLAUDE.md notes never become public pages
+  render:
+    - "**/*.qmd"
   resources:
     - files/
     - images/
     - robots.txt
+    - "scouting/*/clip.mp4"   # scouting video, referenced from raw HTML so Quarto can't detect it
 
 website:
   title: "Jonathan Merlin"

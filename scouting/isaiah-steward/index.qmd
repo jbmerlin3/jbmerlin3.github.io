@@ -1,0 +1,71 @@
+---
+title: "Isaiah Steward"
+subtitle: "SS/2B, Buford HS (GA), class of 2028"
+image: thumb.jpg
+categories: [Position player]
+page-layout: full
+description: "Prep Baseball Report evaluation of Isaiah Steward, SS/2B, Buford HS (GA), class of 2028."
+
+pos: "SS/2B"
+school: "Buford HS (GA)"
+grad: "2028"
+ofp: "40"
+
+scout:
+  role: "hitter"
+  bt: "L/R"
+  size: "5-8 / 145"
+  commit: "Uncommitted"
+  team: ""
+  ofp: "40"
+  follow: "Follow"
+  summary: "Undersized athlete with plus speed and defense with a hit over power offensive approach."
+  pbr_url: ""
+  video: "clip.mp4"
+  video_caption: ""
+  looks:
+    - "PBR evaluation form (Prep Baseball GA)"
+  tools:
+    - name: "Hit"
+      grade: "20/50"
+      tags: ["Athletic setup", "Open", "Leg kick", "Good balance", "Fast bat speed", "Swagger", "Level path", "Fluid rhythm"]
+      notes: "Quiet upper body with minimal head movements. Rarely missed in zone and athleticism allows for adjustability to foul off tough pitches. Quick twitch in the box to get his hands to inside pitches."
+    - name: "Power"
+      grade: "20/35"
+      tags: ["Gap-to-gap"]
+      notes: "Weak lower half with minimal present strength given body composition limiting power to gap-to-gap. Does fire lower half with correct sequencing."
+    - name: "Run"
+      grade: "60/70"
+      tags: ["Burner"]
+      notes: "6.55 60 comfortably gives Steward plus speed which he'll use in all three phases of the game. Offensively, he'll routinely push for extra bases, and it will be tough for an average pop time to stop him from stealing. Defensively, speed plays at SS, 2B and could translate well in CF."
+    - name: "Field"
+      grade: "30/50"
+      tags: ["Soft hands", "Quick, fluid footwork", "Quick, clean exchange", "Athletic", "Plays through"]
+      notes: "Shined at SS but profiles more as a 2B. Athletic enough to make special players, with speed to cover all the ground he needs too. Soft hands and fluid transitions on routine plays. Turned multiple unassisted double plays in my look."
+    - name: "Arm"
+      grade: "30/50"
+      tags: ["Loose", "3/4", "Accurate", "Avg strength"]
+      notes: "Currently average strength for his age, Steward doesn't project to have a plus arm, but he was accurate with his throws both routine and off platform."
+  data:
+    - measure: "60 time"
+      value: "6.55"
+      source: "PBR form"
+    - measure: "Position velo (INF)"
+      value: "93 mph"
+      source: "PBR form"
+    - measure: "Max exit velo"
+      value: "95.2 mph"
+      source: "PBR overall, Class of 2028"
+    - measure: "Max bat speed"
+      value: "69.6 mph"
+      source: "PBR overall, Class of 2028"
+  traits:
+    - name: "Body and projection"
+      tags: ["Small", "Athletic", "Some Projectability"]
+      notes: "Short stature but wiry and can comfortably can add more muscle, especially in the lower half."
+    - name: "Intangibles"
+      tags: ["Freak Athleticism", "Excellent Body language"]
+      notes: "Quality teammate who genuinely enjoys playing baseball. Hard worker."
+---
+
+{{< scout-report pdf="Isaiah-Steward-Report.pdf" image="report.jpg" >}}

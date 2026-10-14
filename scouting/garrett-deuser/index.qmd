@@ -1,0 +1,71 @@
+---
+title: "Garrett Deuser"
+subtitle: "C/1B, Madison Consolidated HS (IN), class of 2028"
+image: thumb.jpg
+categories: [Position player]
+page-layout: full
+description: "Prep Baseball Report evaluation of Garrett Deuser, C/1B, Madison Consolidated HS (IN), class of 2028."
+
+pos: "C/1B"
+school: "Madison Consolidated HS (IN)"
+grad: "2028"
+ofp: "35"
+
+scout:
+  role: "hitter"
+  bt: "L/R"
+  size: "5-10 / 205"
+  commit: "Uncommitted"
+  team: ""
+  ofp: "35"
+  follow: "Follow"
+  summary: "Two-sport athlete with an unorthodox swing geared for pull/air fly balls."
+  pbr_url: ""
+  video: "clip.mp4"
+  video_caption: ""
+  looks:
+    - "PBR evaluation form (Prep Baseball GA)"
+  tools:
+    - name: "Hit"
+      grade: "20/40"
+      tags: ["Wide Setup", "Balance", "Crouch", "Long stride", "Dives", "Leg kick", "OK lower half", "Fast bat speed", "Advanced approach", "Short path", "Power/pull"]
+      notes: "Wide base with high hands and large leg kick. Remains balanced through load and still stays short to the ball. Proven track record to hit plus velocity. Creates plus hand and bat speed."
+    - name: "Power"
+      grade: "30/60"
+      tags: ["Fast bat speed", "Power/pull"]
+      notes: "Powerful lower half with a swing oriented for pull side lift. Above-average hand and bat speeds lead to plus exit velocities."
+    - name: "Run"
+      grade: "50/50"
+      tags: []
+      notes: "Above-average runner for a catcher."
+    - name: "Field"
+      grade: "20/40"
+      tags: ["Average hands", "Stab hands", "Heavy footwork", "Slow, long exchange", "Athletic setup"]
+      notes: "Slight pause/hitch between transfer and throw. Could gain more ground with footwork."
+    - name: "Arm"
+      grade: "20/40"
+      tags: ["Short", "Stiff", "Over the top", "Accurate", "Avg strength"]
+      notes: "Short arm action from over the top slot. Average velocities and consistently on the bag."
+  data:
+    - measure: "60 time"
+      value: "6.90"
+      source: "PBR form"
+    - measure: "Position velo (C)"
+      value: "78 mph"
+      source: "PBR form"
+    - measure: "Pop time"
+      value: "2.04-2.09"
+      source: "PBR form"
+    - measure: "Max exit velo"
+      value: "95 mph"
+      source: "Blog"
+  traits:
+    - name: "Body and projection"
+      tags: ["Strong", "Donkey", "Strong lower", "Wide shoulders", "Some Projectability"]
+      notes: "Football player (LB) strength, translates to power."
+    - name: "Intangibles"
+      tags: ["Average Athleticism", "Excellent Body language", "Excellent Personality"]
+      notes: "One of the best kids I've met on the trail with an infectious personality and a great teammate. Average athleticism with some stiffness."
+---
+
+{{< scout-report pdf="Garrett-Deuser-Report.pdf" image="report.jpg" >}}
