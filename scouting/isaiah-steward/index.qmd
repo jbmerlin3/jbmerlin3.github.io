@@ -1,0 +1,10 @@
+---
+title: "Isaiah Steward"
+subtitle: "SS/2B, Buford HS (GA), class of 2028"
+image: thumb.jpg
+categories: [Position player]
+page-layout: full
+description: "Prep Baseball Report evaluation of Isaiah Steward, SS/2B, Buford HS (GA), class of 2028."
+---
+
+{{< scout-report pdf="Isaiah-Steward-Report.pdf" image="report.jpg" >}}
