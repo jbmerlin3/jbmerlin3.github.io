@@ -19,26 +19,31 @@ scout:
   team: "Dirtbags National"
   ofp: "45"
   follow: "Follow"
-  summary: "Projectable athlete with a live arm. Threw a power fastball with some run for strikes consistently. Developing secondaries."
+  summary: "Projectable athlete with a live arm. Threw a power fastball with a bit of cut/ride for strikes consistently. Developing secondaries."
   pbr_url: ""
   video: "clip.mp4"
   video_caption: ""
   looks:
     - "PBR evaluation form (Prep Baseball GA)"
+    - "East Coast Super Sophomore Games (Class of 2029), Jul 31, 2026, TrackMan"
   tools:
     - name: "Fastball"
       grade: "30/50"
       velo: "87-89, T90"
-      tags: ["Run", "Heavy", "Strikes"]
-      notes: "T90 x4 in my look, has been clocked up to 92. Some run from 3/4 slot. Located up in the zone with 2K consistently as primary out pitch."
+      shape: "15.7 IVB, 7.6 HM"
+      spin: 2144
+      tags: ["Cut Ride", "Heavy", "Strikes"]
+      notes: "T90 x4 in my look, has been clocked up to 92. Some cut ride from 3/4 slot. Located up in the zone with 2K consistently as primary out pitch."
     - name: "Sinker"
       grade: "20/50"
       velo: "85-87"
-      tags: ["15-16\" HB"]
+      tags: ["12-15\" HB"]
       notes: "Only to righties. Gets inside barrels."
     - name: "Slider"
       grade: "20/45"
       velo: "75-77"
+      shape: "-7.3 IVB, -15.9 HM"
+      spin: 2189
       tags: ["10/4", "Gradual", "Near FB arm speed", "Some Strikes"]
       notes: "Landed for called strikes but also tended to overthrow leading to arm side misses or spikes. Sweeper shape, up to -19\" HB."
     - name: "Command"

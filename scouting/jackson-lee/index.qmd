@@ -53,6 +53,12 @@ scout:
     - measure: "Position velo"
       value: "OF 90, INF 86"
       source: "PBR form"
+    - measure: "Max exit velo"
+      value: "95.9 mph"
+      source: "PBR overall, Class of 2028"
+    - measure: "Max bat speed"
+      value: "78.3 mph"
+      source: "PBR overall, Class of 2028"
   traits:
     - name: "Body and projection"
       tags: ["Lanky", "Athletic", "Plus Projectability"]
