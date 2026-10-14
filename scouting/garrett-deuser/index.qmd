@@ -1,0 +1,10 @@
+---
+title: "Garrett Deuser"
+subtitle: "C/1B, Madison Consolidated HS (IN), class of 2028"
+image: thumb.jpg
+categories: [Position player]
+page-layout: full
+description: "Prep Baseball Report evaluation of Garrett Deuser, C/1B, Madison Consolidated HS (IN), class of 2028."
+---
+
+{{< scout-report pdf="Garrett-Deuser-Report.pdf" image="report.jpg" >}}

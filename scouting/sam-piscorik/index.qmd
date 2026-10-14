@@ -1,0 +1,10 @@
+---
+title: "Sam Piscorik"
+subtitle: "RHP, Wakefield HS (NC), class of 2029"
+image: thumb.jpg
+categories: [Pitcher]
+page-layout: full
+description: "Prep Baseball Report evaluation of Sam Piscorik, RHP, Wakefield HS (NC), class of 2029."
+---
+
+{{< scout-report pdf="Sam-Piscorik-Report.pdf" image="report.jpg" >}}
